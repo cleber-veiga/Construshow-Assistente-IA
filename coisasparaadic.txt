@@ -1,0 +1,28 @@
+=-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-=
+Preciso fazer uma verificação depois que ele extrai as entidades de uma pergunta, caso seja múltiplas perguntas
+mais uma situação, por exemplo:
+
+em uma situação onde a entitidade principal seja cliente, nas pergunta 
+
+-> "Qual o histórico das compras do cliente e também me traga o histórico de devoluções dele?"
+
+Será divida em:
+-> Qual o histórico das compras do cliente
+-> me traga o histórico de devoluções dele
+
+as entidades identificadas, respectivamente serão:
+-> historico, compra, cliente
+-> historico, devolucao
+
+isso resultaria no segundo a aparência de necessidade de solicitar mais informações, visto que
+a devolucao dependende de cliente e produto e como ambos não estão presente na sub_mensagem,
+não se sabe qual está sendo pedido.
+
+Por isso depois que ele extrair as entidades de uma pergunta, é necessário, antes de analisar os
+relacionamentos, verificar se a entidade principal está junto com as entidades identificadas, caso
+esteja, não faz nada mas se não estiver, adiciona, assim mesmo nessa situação as entidades ficariam:
+
+-> historico, compra, cliente
+-> historico, devolucao, cliente
+
+=-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-==-=-=-=-=-=-==-=-=-==-=-=-==

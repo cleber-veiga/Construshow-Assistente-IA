@@ -27,13 +27,14 @@ def unify_data(chat_data: List[Dict]) -> Dict:
     # Aninha as mensagens
     context_messages = []
     for item in chat_data:
-        message_data = {
-            'id_message': item['idmessage'],
-            'sender': item['sender'],
-            'message': item['message'],
-            'timestamp': item['timestamp'].isoformat() if isinstance(item['timestamp'], datetime) else item['timestamp']
-        }
-        context_messages.append(message_data)
+        if not item['idmessage'] is None:
+            message_data = {
+                'id_message': item['idmessage'],
+                'sender': item['sender'],
+                'message': item['message'],
+                'timestamp': item['timestamp'].isoformat() if isinstance(item['timestamp'], datetime) else item['timestamp']
+            }
+            context_messages.append(message_data)
 
     # Garante que context_message fique por último
     unified_data = OrderedDict(fixed_fields)

@@ -24,7 +24,7 @@ def search_or_open_chat(data):
         response_handler = ResponseHandler()
         resposta_greeting = response_handler.get_response("Olá", "greeting")
         
-        create_new_chat_detail(result['id_chat'], 'SYSTEM', resposta_greeting)
+        create_new_chat_detail(result['id_chat'], 'IA', resposta_greeting)
         
         id_chat = result['id_chat'][0]
 

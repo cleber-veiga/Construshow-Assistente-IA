@@ -22,7 +22,9 @@ class ChatOpenResource(Resource):
                 ]
             )
 
-            response = ChatProcessorOpen.process_chat_request_open(data)
+            response = ChatProcessorOpen()
+            loger.log('DEBUG',f"Inicio do processamento da equisição de abertura")
+            response = response.process_chat_request_open(data)
             response = make_response(jsonify(response))
             response.status_code = 200
             return response
@@ -45,8 +47,11 @@ class ChatMessageCoreResource(Resource):
                 ]
             )
 
-            response = ChatProcessorMessage.process_chat_request_message(data)
+            response = ChatProcessorMessage()
+            loger.log('DEBUG',f"Inicio do processamento da equisição da mensagem")
+            response = response.process_chat_request_message(data)
             response = make_response(jsonify(response))
+            loger.log('DEBUG',f"Requisição finalizada")
             response.status_code = 200
             return response
         except Exception as e:

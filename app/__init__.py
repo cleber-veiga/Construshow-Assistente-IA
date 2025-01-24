@@ -1,14 +1,16 @@
 from flask import Flask, request
 from flask_restful import Api
+from app.core.chat_memory import ChatMemory
 from app.database import start_the_database
 from config import loger, conf
 from app.api.v1.routes import routes as routes_v1
 
-def create_the_application():
-    app = Flask(__name__)
+app = Flask(__name__)
+app.chat_memory = ChatMemory()
+environment = conf.get_env_config()['environment']
 
-    environment = conf.get_env_config()['environment']
-
+def create_the_application()-> Flask:
+    
     if environment == '0':
         @app.before_request
         def log_request_info():

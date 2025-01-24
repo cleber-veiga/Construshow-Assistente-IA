@@ -30,6 +30,11 @@ class ConfigManager:
         self.remove_accents_and_special_characters = None
         self.remove_punctuation = None
 
+        """Configurações de LLM"""
+        self.llm_provider = None
+        self.llm_api_key = None
+        self.llm_model = None
+
         self._load_configuration()
         if self.connection_file and self.connection_name:
             self._load_connection_file()
@@ -110,6 +115,28 @@ class ConfigManager:
                 )
             else:
                  self.remove_punctuation = True
+
+            if config.has_option('LLM', 'Provider'):
+                self.llm_provider = self._replace_app_path(
+                    config.get('LLM', 'Provider')
+                )
+            else:
+                raise RuntimeError(f"Erro ao carregar informações do LLM Provider - atribute: llm_provider")
+            
+            if config.has_option('LLM', 'ApiKey'):
+                self.llm_api_key = self._replace_app_path(
+                    config.get('LLM', 'ApiKey')
+                )
+            else:
+                raise RuntimeError(f"Erro ao carregar informações do LLM Provider - atribute: llm_api_key")
+            
+            if config.has_option('LLM', 'Model'):
+                self.llm_model = self._replace_app_path(
+                    config.get('LLM', 'Model')
+                )
+            else:
+                raise RuntimeError(f"Erro ao carregar informações do LLM Provider - atribute: llm_model")
+            
             
         except configparser.Error as e:
             raise RuntimeError(f"Erro ao carregar o arquivo de configuração: {e}")
@@ -234,4 +261,14 @@ class ConfigManager:
             "lowercase": self.lowercase,
             "remove_accents_and_special_characters": self.remove_accents_and_special_characters,
             "remove_punctuation": self.remove_punctuation
+        }
+    
+    def get_llm_config(self):
+        """Retorna as configurações de Ambiente."""
+        if not self.llm_provider or not self.llm_api_key:
+            raise ValueError("As configurações de LLM Provider não foram carregadas corretamente.")
+        return {
+            "llm_provider": self.llm_provider,
+            "llm_api_key": self.llm_api_key,
+            "llm_model": self.llm_model
         }

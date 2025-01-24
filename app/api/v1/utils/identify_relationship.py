@@ -1,5 +1,5 @@
 import pickle
-import spacy
+from config import nlp
 
 class ClassifyRelationship:
 
@@ -8,15 +8,11 @@ class ClassifyRelationship:
         self.df = self._loads_entity_relationship()
         self.data = self.transform_df_to_dictionary()
         self.translation_df = self._loads_entity_translation()
-        self.nlp = self._load_nlp()
     
     def _loads_entity_relationship(self):
         with open("mod/app/models/saved/entity_relationship.pkl", "rb") as f:
             df = pickle.load(f)
         return df
-    
-    def _load_nlp(self):
-        return spacy.load('mod/app/models/pt_core_news_md-3.8.0')
     
     def _loads_entity_translation(self):
         with open("mod/app/models/saved/entity_translation.pkl", "rb") as f:
@@ -69,31 +65,38 @@ class ClassifyRelationship:
                 return False, missing, entity
         return True, [], ""
 
-    def run_relationship_processing(self,entities):
-        self.entities = entities
-        valid, missing, main_entity = self.validate_relationship()
+    def run_relationship_processing(self,entities,intention,entities_ignore):
+        if intention not in  entities_ignore:
+            self.entities = entities
+            valid, missing, main_entity = self.validate_relationship()
 
-        if valid:
-            path = self.generate_path_to_RN()
-            result = {
-                "success": True,
-                "path_rn": path,
-                "entitie": "",
-                "missing": []
-            }
+            if valid:
+                path = self.generate_path_to_RN()
+                result = {
+                    "success": True,
+                    "path_rn": path,
+                    "entitie": "",
+                    "missing": []
+                }
+            else:
+                result = {
+                    "success": False,
+                    "path_rn": "",
+                    "entitie": main_entity,
+                    "missing": missing
+                }
         else:
             result = {
-                "success": False,
-                "path_rn": "",
-                "entitie": main_entity,
-                "missing": missing
-            }
-
+                    "success": True,
+                    "path_rn": "",
+                    "entitie": "", 
+                    "missing": [],
+                }
         return result
     
     def run_identify_entity(self,message):
         entities_list = self.df['entity'].drop_duplicates().tolist()
-        doc = self.nlp(message)
+        doc = nlp(message)
         identify = []
 
         for token in doc:
@@ -105,7 +108,7 @@ class ClassifyRelationship:
     
     def run_identify_entity_main(self,message):
         entities_list = self.df['entity'].drop_duplicates().tolist()
-        doc = self.nlp(message)
+        doc = nlp(message)
     
         entities_present = [entity for entity in entities_list if entity in message.lower()]
         
