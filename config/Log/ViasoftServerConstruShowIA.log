@@ -1,90 +1,496 @@
-2025-01-30 10:47:18,828 - root - WARNING - Interrupção manual recebida. Encerrando serviço...
-2025-01-30 10:47:18,829 - root - DEBUG - Encerrando o serviço...
-2025-01-30 10:47:18,830 - root - DEBUG - Aguardando o término da thread do servidor...
-2025-01-30 10:47:23,838 - root - ERROR - A thread do servidor não foi encerrada. Forçando o término do programa.
-2025-01-30 10:47:29,812 - root - DEBUG - Executando como serviço via NSSM.
-2025-01-30 10:47:29,813 - root - DEBUG - Serviço sendo inicializado
-2025-01-30 10:47:29,814 - root - DEBUG - Iniciando a criação do app
-2025-01-30 10:47:29,814 - root - DEBUG - Servidor iniciado em uma thread separada.
-2025-01-30 10:47:29,814 - root - DEBUG - Iniciando a instância do SQLAlchemy (Database)...
-2025-01-30 10:47:29,815 - root - DEBUG - Iniciando importação de TensorFlow e spaCy...
-2025-01-30 10:47:29,815 - root - DEBUG - Aguardando carregamento de recursos...
-2025-01-30 10:47:29,815 - root - DEBUG - Iniciando o banco de dados com a aplicação
-2025-01-30 10:47:29,886 - root - DEBUG - Verificando a conexão com o banco de dados...
-2025-01-30 10:47:30,353 - root - DEBUG - Conexão com o banco de dados verificada com sucesso: (1,)
-2025-01-30 10:47:30,356 - waitress - INFO - Serving on http://127.0.0.1:2710
-2025-01-30 10:47:31,466 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
-2025-01-30 10:47:33,359 - root - DEBUG - TensorFlow importado com sucesso.
-2025-01-30 10:47:34,399 - root - DEBUG - spaCy importado com sucesso.
-2025-01-30 10:47:34,400 - root - DEBUG - Todos os recursos pesados foram carregados.
-2025-01-30 10:47:39,106 - root - DEBUG - Inicio do processamento da equisição da mensagem
-2025-01-30 10:47:39,107 - root - DEBUG - Identifica a entidade principal da pergunta
-2025-01-30 10:47:39,107 - root - ERROR - Erro ao processar a requisição: 'NoneType' object is not callable
-2025-01-30 10:48:12,659 - root - WARNING - Interrupção manual recebida. Encerrando serviço...
-2025-01-30 10:48:12,659 - root - DEBUG - Encerrando o serviço...
-2025-01-30 10:48:12,660 - root - DEBUG - Aguardando o término da thread do servidor...
-2025-01-30 10:48:17,663 - root - DEBUG - Encerrando o serviço...
-2025-01-30 10:48:17,664 - root - INFO - Serviço encerrado com sucesso.
-2025-01-30 10:48:37,243 - root - DEBUG - Executando como serviço via NSSM.
-2025-01-30 10:48:37,244 - root - DEBUG - Serviço sendo inicializado
-2025-01-30 10:48:37,247 - root - DEBUG - Iniciando a criação do app
-2025-01-30 10:48:37,247 - root - DEBUG - Servidor iniciado em uma thread separada.
-2025-01-30 10:48:37,247 - root - DEBUG - Iniciando a instância do SQLAlchemy (Database)...
-2025-01-30 10:48:37,248 - root - DEBUG - Iniciando o banco de dados com a aplicação
-2025-01-30 10:48:37,248 - root - DEBUG - Iniciando importação de TensorFlow e spaCy...
-2025-01-30 10:48:37,248 - root - DEBUG - Aguardando carregamento de recursos...
-2025-01-30 10:48:37,462 - root - DEBUG - Verificando a conexão com o banco de dados...
-2025-01-30 10:48:37,912 - root - DEBUG - Conexão com o banco de dados verificada com sucesso: (1,)
-2025-01-30 10:48:37,922 - waitress - INFO - Serving on http://127.0.0.1:2710
-2025-01-30 10:48:39,785 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
-2025-01-30 10:48:42,348 - root - DEBUG - Aguardando carregamento de recursos...
-2025-01-30 10:48:42,660 - root - DEBUG - TensorFlow importado com sucesso.
-2025-01-30 10:48:45,952 - root - DEBUG - spaCy importado com sucesso.
-2025-01-30 10:48:45,953 - root - DEBUG - Todos os recursos pesados foram carregados.
-2025-01-30 10:48:51,418 - root - DEBUG - Inicio do processamento da equisição da mensagem
-2025-01-30 10:48:51,419 - root - DEBUG - Identifica a entidade principal da pergunta
-2025-01-30 10:48:57,385 - root - ERROR - Erro ao processar a requisição: 'NoneType' object is not callable
-2025-01-30 10:51:29,450 - root - WARNING - Interrupção manual recebida. Encerrando serviço...
-2025-01-30 10:51:29,451 - root - DEBUG - Encerrando o serviço...
-2025-01-30 10:51:29,452 - root - DEBUG - Aguardando o término da thread do servidor...
-2025-01-30 10:51:34,458 - root - ERROR - A thread do servidor não foi encerrada. Forçando o término do programa.
-2025-01-30 10:53:19,381 - root - DEBUG - Executando como serviço via NSSM.
-2025-01-30 10:53:19,382 - root - DEBUG - Serviço sendo inicializado
-2025-01-30 10:53:19,385 - root - DEBUG - Iniciando a criação do app
-2025-01-30 10:53:19,385 - root - DEBUG - Servidor iniciado em uma thread separada.
-2025-01-30 10:53:19,386 - root - DEBUG - Iniciando a instância do SQLAlchemy (Database)...
-2025-01-30 10:53:19,386 - root - DEBUG - Iniciando o banco de dados com a aplicação
-2025-01-30 10:53:29,790 - root - DEBUG - Aguardando carregamento de recursos...
-2025-01-30 10:53:29,985 - root - DEBUG - Iniciando importação de TensorFlow e spaCy...
-2025-01-30 10:53:36,506 - root - DEBUG - Aguardando carregamento de recursos...
-2025-01-30 10:53:37,941 - root - ERROR - Erro ao carregar recursos pesados: The field annotations for DynamicRaggedShape are invalid. Field __pydevd_ret_val_dict is missing a type annotation.
-2025-01-30 10:53:39,810 - root - DEBUG - Verificando a conexão com o banco de dados...
-2025-01-30 10:53:41,703 - root - DEBUG - Aguardando carregamento de recursos...
-2025-01-30 10:53:42,236 - root - DEBUG - Conexão com o banco de dados verificada com sucesso: (1,)
-2025-01-30 10:53:46,931 - root - DEBUG - Aguardando carregamento de recursos...
-2025-01-30 10:53:48,693 - waitress - INFO - Serving on http://127.0.0.1:2710
-2025-01-30 10:53:51,933 - root - DEBUG - Aguardando carregamento de recursos...
-2025-01-30 10:53:56,934 - root - DEBUG - Aguardando carregamento de recursos...
-2025-01-30 10:54:01,936 - root - DEBUG - Aguardando carregamento de recursos...
-2025-01-30 10:54:06,938 - root - DEBUG - Aguardando carregamento de recursos...
-2025-01-30 10:54:11,941 - root - DEBUG - Aguardando carregamento de recursos...
-2025-01-30 10:54:16,942 - root - DEBUG - Aguardando carregamento de recursos...
-2025-01-30 10:54:21,944 - root - DEBUG - Aguardando carregamento de recursos...
-2025-01-30 10:54:26,946 - root - DEBUG - Aguardando carregamento de recursos...
-2025-01-30 11:02:20,411 - root - DEBUG - Executando como serviço via NSSM.
-2025-01-30 11:02:20,412 - root - DEBUG - Serviço sendo inicializado
-2025-01-30 11:02:20,412 - root - DEBUG - Iniciando a criação do app
-2025-01-30 11:02:20,412 - root - DEBUG - Servidor iniciado em uma thread separada.
-2025-01-30 11:02:20,413 - root - DEBUG - Iniciando a instância do SQLAlchemy (Database)...
-2025-01-30 11:02:20,413 - root - DEBUG - Iniciando o banco de dados com a aplicação
-2025-01-30 11:02:20,428 - root - DEBUG - Verificando a conexão com o banco de dados...
-2025-01-30 11:02:20,821 - root - DEBUG - Conexão com o banco de dados verificada com sucesso: (1,)
-2025-01-30 11:02:20,829 - waitress - INFO - Serving on http://127.0.0.1:2710
-2025-01-30 11:02:32,874 - root - DEBUG - Inicio do processamento da equisição da mensagem
-2025-01-30 11:02:32,875 - root - DEBUG - Identifica a entidade principal da pergunta
-2025-01-30 11:02:32,876 - root - ERROR - Erro ao processar a requisição: 'NoneType' object is not callable
-2025-01-30 11:03:16,558 - root - WARNING - Interrupção manual recebida. Encerrando serviço...
-2025-01-30 11:03:16,559 - root - DEBUG - Encerrando o serviço...
-2025-01-30 11:03:16,559 - root - DEBUG - Aguardando o término da thread do servidor...
-2025-01-30 11:03:21,568 - root - DEBUG - Encerrando o serviço...
-2025-01-30 11:03:21,569 - root - INFO - Serviço encerrado com sucesso.
+2025-01-30 17:06:39,047 - root - DEBUG - Executando como serviço via NSSM.
+2025-01-30 17:06:39,048 - root - DEBUG - Serviço sendo inicializado
+2025-01-30 17:06:39,048 - root - DEBUG - Iniciando a criação do app
+2025-01-30 17:06:39,049 - root - DEBUG - Servidor iniciado em uma thread separada.
+2025-01-30 17:06:39,049 - root - DEBUG - Iniciando a instância do SQLAlchemy (Database)...
+2025-01-30 17:06:39,050 - root - DEBUG - Iniciando o banco de dados com a aplicação
+2025-01-30 17:06:39,138 - root - DEBUG - Verificando a conexão com o banco de dados...
+2025-01-30 17:06:39,560 - root - DEBUG - Conexão com o banco de dados verificada com sucesso: (1,)
+2025-01-30 17:06:39,564 - waitress - INFO - Serving on http://127.0.0.1:2710
+2025-01-30 17:07:16,280 - root - DEBUG - Inicio do processamento da equisição da mensagem
+2025-01-30 17:07:16,280 - root - DEBUG - Identifica a entidade principal da pergunta
+2025-01-30 17:07:16,289 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
+2025-01-30 17:07:17,120 - root - DEBUG - Realiza a divisão em submenssagens
+2025-01-30 17:07:17,120 - root - DEBUG - Identifica as entidades de cada submenssagem e realiza a análise dos seus relacionamentos
+2025-01-30 17:07:17,121 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
+2025-01-30 17:07:17,130 - root - DEBUG - Classifica o domínio das mensagens -> contextual_messages: [{'success': True, 'path_rn': '/cart', 'entitie': '', 'missing': [], 'short_message': 'Analise a venda e forneça insights para melhorá-la', 'string_intention': 'examine', 'sub_message_hash': 'dee635f23b9aa1444c3724ffe04dd2ff66d0baaeb830c3cb6ced16a5fdbf03d9'}], conf: {'lowercase': 'True', 'remove_accents_and_special_characters': 'True', 'remove_punctuation': 'True'}
+2025-01-30 17:07:17,130 - root - DEBUG - Inicia o For
+2025-01-30 17:07:17,131 - root - DEBUG - Inicia a classificação
+2025-01-30 17:07:17,131 - root - DEBUG - Carregando modelo e componentes
+2025-01-30 17:07:18,569 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-01-30 17:07:19,868 - root - DEBUG - Domínio convertido: examine_cart
+2025-01-30 17:07:19,869 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
+2025-01-30 17:07:19,869 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\examine\cart
+2025-01-30 17:07:19,869 - root - DEBUG - Carregando modelo: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\examine\cart\examine_cart_best_model.keras
+2025-01-30 17:07:20,151 - root - DEBUG - Modelo carregado com sucesso.
+2025-01-30 17:07:20,152 - root - DEBUG - Carregando tokenizer: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\examine\cart\examine_cart_tokenizer.pkl
+2025-01-30 17:07:20,154 - root - DEBUG - Tokenizer carregado com sucesso.
+2025-01-30 17:07:20,154 - root - DEBUG - Carregando MultiLabelBinarizer: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\examine\cart\examine_cart_mlb.pkl
+2025-01-30 17:07:20,155 - root - DEBUG - MultiLabelBinarizer carregado com sucesso.
+2025-01-30 17:07:20,155 - root - DEBUG - Modelo carregado corretamente
+2025-01-30 17:07:20,155 - root - DEBUG - Tokenizer carregado corretamente
+2025-01-30 17:07:20,155 - root - DEBUG - MultiLabelBinarizer carregado corretamente
+2025-01-30 17:07:20,156 - root - DEBUG - Iniciando a predição
+2025-01-30 17:07:21,033 - root - DEBUG - Inicia a geração da resposta
+2025-01-30 17:07:21,983 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-01-30 17:07:21,984 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=None socket_options=None
+2025-01-30 17:07:21,995 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001EA93A3B890>
+2025-01-30 17:07:21,996 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001EA935FD950> server_hostname='api.groq.com' timeout=None
+2025-01-30 17:07:22,044 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001EA93A3B5F0>
+2025-01-30 17:07:22,045 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-01-30 17:07:22,046 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-01-30 17:07:22,046 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-01-30 17:07:22,047 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-01-30 17:07:22,047 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-01-30 17:07:22,480 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 413, b'Payload Too Large', [(b'Date', b'Thu, 30 Jan 2025 20:07:22 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'361'), (b'Connection', b'keep-alive'), (b'CF-Ray', b'90a4167a9f1a64ea-GIG'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Retry-After', b'4'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Vary', b'Origin, Accept-Encoding'), (b'Via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'x-groq-region', b'us-west-1'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14400'), (b'x-ratelimit-remaining-tokens', b'6000'), (b'x-ratelimit-reset-requests', b'0s'), (b'x-ratelimit-reset-tokens', b'0s'), (b'x-request-id', b'req_01jjwd6ja5ft7bz872wdt0qfxc'), (b'Set-Cookie', b'__cf_bm=EoO_4drhUFF3dwiRRxzFMlQcYzuN_epflLopLXR3EoE-1738267642-1.0.1.1-XAkJy2qgqdVOTEcBGLMESWcoRxUBu0.cd8rFU1y9kF137sx4Kv0MBMs1Z2k9QEom8H8_QhI9IuI52mPBC6Swlg; path=/; expires=Thu, 30-Jan-25 20:37:22 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare')])
+2025-01-30 17:07:22,482 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2025-01-30 17:07:22,482 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-01-30 17:07:22,483 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-01-30 17:07:22,483 - httpcore.http11 - DEBUG - response_closed.started
+2025-01-30 17:07:22,483 - httpcore.http11 - DEBUG - response_closed.complete
+2025-01-30 17:07:22,484 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "413 Payload Too Large" Headers({'date': 'Thu, 30 Jan 2025 20:07:22 GMT', 'content-type': 'application/json', 'content-length': '361', 'connection': 'keep-alive', 'cf-ray': '90a4167a9f1a64ea-GIG', 'cf-cache-status': 'DYNAMIC', 'retry-after': '4', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin, Accept-Encoding', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'x-groq-region': 'us-west-1', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14400', 'x-ratelimit-remaining-tokens': '6000', 'x-ratelimit-reset-requests': '0s', 'x-ratelimit-reset-tokens': '0s', 'x-request-id': 'req_01jjwd6ja5ft7bz872wdt0qfxc', 'set-cookie': '__cf_bm=EoO_4drhUFF3dwiRRxzFMlQcYzuN_epflLopLXR3EoE-1738267642-1.0.1.1-XAkJy2qgqdVOTEcBGLMESWcoRxUBu0.cd8rFU1y9kF137sx4Kv0MBMs1Z2k9QEom8H8_QhI9IuI52mPBC6Swlg; path=/; expires=Thu, 30-Jan-25 20:37:22 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare'})
+2025-01-30 17:07:22,485 - groq._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "D:\ProjetosIA\ViasoftServerConstruShowIA\venv\Lib\site-packages\groq\_base_client.py", line 1040, in _request
+    response.raise_for_status()
+  File "D:\ProjetosIA\ViasoftServerConstruShowIA\venv\Lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '413 Payload Too Large' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/413
+2025-01-30 17:07:22,486 - groq._base_client - DEBUG - Not retrying
+2025-01-30 17:07:22,487 - groq._base_client - DEBUG - Re-raising status error
+2025-01-30 17:07:22,487 - root - ERROR - Erro no LLM: Error code: 413 - {'error': {'message': 'Request too large for model `llama3-8b-8192` in organization `org_01jd77p50ge9eb04m2a4k2c329` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 6341, please reduce your message size and try again. Visit https://console.groq.com/docs/rate-limits for more information.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2025-01-30 17:07:22,488 - root - DEBUG - Salva a mensagem da IA no banco de dados
+2025-01-30 17:07:22,513 - root - DEBUG - Requisição finalizada
+2025-01-30 17:09:38,637 - root - DEBUG - Inicio do processamento da equisição da mensagem
+2025-01-30 17:09:38,638 - root - DEBUG - Identifica a entidade principal da pergunta
+2025-01-30 17:09:38,646 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
+2025-01-30 17:09:38,649 - root - DEBUG - Realiza a divisão em submenssagens
+2025-01-30 17:09:38,649 - root - DEBUG - Identifica as entidades de cada submenssagem e realiza a análise dos seus relacionamentos
+2025-01-30 17:09:38,650 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
+2025-01-30 17:09:38,653 - root - DEBUG - Classifica o domínio das mensagens -> contextual_messages: [{'success': True, 'path_rn': '', 'entitie': '', 'missing': [], 'short_message': 'Bom dia', 'string_intention': 'greeting', 'sub_message_hash': '39809222fde70929e650943f840638fdecae975e074101e607ec555464e5e98e'}], conf: {'lowercase': 'True', 'remove_accents_and_special_characters': 'True', 'remove_punctuation': 'True'}
+2025-01-30 17:09:38,654 - root - DEBUG - Inicia o For
+2025-01-30 17:09:38,654 - root - DEBUG - É greeting
+2025-01-30 17:09:38,654 - root - DEBUG - Inicia a geração da resposta
+2025-01-30 17:09:39,603 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-01-30 17:09:39,603 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=None socket_options=None
+2025-01-30 17:09:39,605 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001EAECC08890>
+2025-01-30 17:09:39,605 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001EAECBEA5D0> server_hostname='api.groq.com' timeout=None
+2025-01-30 17:09:39,651 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001EAECC090D0>
+2025-01-30 17:09:39,652 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-01-30 17:09:39,653 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-01-30 17:09:39,653 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-01-30 17:09:39,654 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-01-30 17:09:39,654 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-01-30 17:09:40,020 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 413, b'Payload Too Large', [(b'Date', b'Thu, 30 Jan 2025 20:09:39 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'361'), (b'Connection', b'keep-alive'), (b'CF-Ray', b'90a419d6a83dcad3-GIG'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Retry-After', b'5'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Vary', b'Origin, Accept-Encoding'), (b'Via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'x-groq-region', b'us-west-1'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14400'), (b'x-ratelimit-remaining-tokens', b'6000'), (b'x-ratelimit-reset-requests', b'0s'), (b'x-ratelimit-reset-tokens', b'0s'), (b'x-request-id', b'req_01jjwdarp5f3zbmphs8vmmwp4j'), (b'Set-Cookie', b'__cf_bm=acV2mbUIjUxNbvh9qWL7PuKHsOfQJ7saikQ7ooUQ8CI-1738267779-1.0.1.1-iLhPN8Pv0HJbXslOsKpZi0CrQYzai04C6JCjYaK0ujt_T4vOw4BH1f9hJjZLI3K989zFDTcWk3FAlMn3R1SJtg; path=/; expires=Thu, 30-Jan-25 20:39:39 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare')])
+2025-01-30 17:09:40,022 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2025-01-30 17:09:40,023 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-01-30 17:09:40,023 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-01-30 17:09:40,024 - httpcore.http11 - DEBUG - response_closed.started
+2025-01-30 17:09:40,024 - httpcore.http11 - DEBUG - response_closed.complete
+2025-01-30 17:09:40,025 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "413 Payload Too Large" Headers({'date': 'Thu, 30 Jan 2025 20:09:39 GMT', 'content-type': 'application/json', 'content-length': '361', 'connection': 'keep-alive', 'cf-ray': '90a419d6a83dcad3-GIG', 'cf-cache-status': 'DYNAMIC', 'retry-after': '5', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin, Accept-Encoding', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'x-groq-region': 'us-west-1', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14400', 'x-ratelimit-remaining-tokens': '6000', 'x-ratelimit-reset-requests': '0s', 'x-ratelimit-reset-tokens': '0s', 'x-request-id': 'req_01jjwdarp5f3zbmphs8vmmwp4j', 'set-cookie': '__cf_bm=acV2mbUIjUxNbvh9qWL7PuKHsOfQJ7saikQ7ooUQ8CI-1738267779-1.0.1.1-iLhPN8Pv0HJbXslOsKpZi0CrQYzai04C6JCjYaK0ujt_T4vOw4BH1f9hJjZLI3K989zFDTcWk3FAlMn3R1SJtg; path=/; expires=Thu, 30-Jan-25 20:39:39 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare'})
+2025-01-30 17:09:40,027 - groq._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "D:\ProjetosIA\ViasoftServerConstruShowIA\venv\Lib\site-packages\groq\_base_client.py", line 1040, in _request
+    response.raise_for_status()
+  File "D:\ProjetosIA\ViasoftServerConstruShowIA\venv\Lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '413 Payload Too Large' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/413
+2025-01-30 17:09:40,028 - groq._base_client - DEBUG - Not retrying
+2025-01-30 17:09:40,029 - groq._base_client - DEBUG - Re-raising status error
+2025-01-30 17:09:40,029 - root - ERROR - Erro no LLM: Error code: 413 - {'error': {'message': 'Request too large for model `llama3-8b-8192` in organization `org_01jd77p50ge9eb04m2a4k2c329` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 6456, please reduce your message size and try again. Visit https://console.groq.com/docs/rate-limits for more information.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2025-01-30 17:09:40,030 - root - DEBUG - Salva a mensagem da IA no banco de dados
+2025-01-30 17:09:40,037 - root - DEBUG - Requisição finalizada
+2025-01-30 17:14:49,727 - root - DEBUG - Inicio do processamento da equisição da mensagem
+2025-01-30 17:14:49,727 - root - DEBUG - Identifica a entidade principal da pergunta
+2025-01-30 17:14:49,735 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
+2025-01-30 17:14:49,739 - root - DEBUG - Realiza a divisão em submenssagens
+2025-01-30 17:14:49,739 - root - DEBUG - Identifica as entidades de cada submenssagem e realiza a análise dos seus relacionamentos
+2025-01-30 17:14:49,740 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
+2025-01-30 17:14:49,743 - root - DEBUG - Classifica o domínio das mensagens -> contextual_messages: [{'success': True, 'path_rn': '', 'entitie': '', 'missing': [], 'short_message': 'Bom dia', 'string_intention': 'greeting', 'sub_message_hash': '30dadbfc014504f3f04193d4bf5cd0db7b8db5eb9747b46bd823e4253a40bfba'}], conf: {'lowercase': 'True', 'remove_accents_and_special_characters': 'True', 'remove_punctuation': 'True'}
+2025-01-30 17:14:49,743 - root - DEBUG - Inicia o For
+2025-01-30 17:14:49,744 - root - DEBUG - É greeting
+2025-01-30 17:14:49,744 - root - DEBUG - Inicia a geração da resposta
+2025-01-30 17:14:50,959 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-01-30 17:14:50,960 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=None socket_options=None
+2025-01-30 17:14:51,041 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001EA93B7F890>
+2025-01-30 17:14:51,042 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001EAECBEAA50> server_hostname='api.groq.com' timeout=None
+2025-01-30 17:14:51,089 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001EAECC094F0>
+2025-01-30 17:14:51,090 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-01-30 17:14:51,090 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-01-30 17:14:51,090 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-01-30 17:14:51,091 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-01-30 17:14:51,091 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-01-30 17:14:51,975 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 413, b'Payload Too Large', [(b'Date', b'Thu, 30 Jan 2025 20:14:51 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'361'), (b'Connection', b'keep-alive'), (b'CF-Ray', b'90a421711fc1df57-GIG'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Retry-After', b'6'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Vary', b'Origin, Accept-Encoding'), (b'Via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'x-groq-region', b'us-west-1'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14400'), (b'x-ratelimit-remaining-tokens', b'6000'), (b'x-ratelimit-reset-requests', b'0s'), (b'x-ratelimit-reset-tokens', b'0s'), (b'x-request-id', b'req_01jjwdm993fp8bbn23e4037atx'), (b'Set-Cookie', b'__cf_bm=fKbTSt6wyg46z_tWAMqLxRQ36C96bNPEGG3d5xNffKA-1738268091-1.0.1.1-Prq9_iZeuOOkbPubbRwkChc_CVXm4yPBo9cpYA00ryBJtZR.NK0Ad3btyrOQslfu9DL.T3heWLMnZUKmUH29TA; path=/; expires=Thu, 30-Jan-25 20:44:51 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare')])
+2025-01-30 17:14:51,977 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2025-01-30 17:14:51,977 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-01-30 17:14:51,978 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-01-30 17:14:51,978 - httpcore.http11 - DEBUG - response_closed.started
+2025-01-30 17:14:51,978 - httpcore.http11 - DEBUG - response_closed.complete
+2025-01-30 17:14:51,978 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "413 Payload Too Large" Headers({'date': 'Thu, 30 Jan 2025 20:14:51 GMT', 'content-type': 'application/json', 'content-length': '361', 'connection': 'keep-alive', 'cf-ray': '90a421711fc1df57-GIG', 'cf-cache-status': 'DYNAMIC', 'retry-after': '6', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin, Accept-Encoding', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'x-groq-region': 'us-west-1', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14400', 'x-ratelimit-remaining-tokens': '6000', 'x-ratelimit-reset-requests': '0s', 'x-ratelimit-reset-tokens': '0s', 'x-request-id': 'req_01jjwdm993fp8bbn23e4037atx', 'set-cookie': '__cf_bm=fKbTSt6wyg46z_tWAMqLxRQ36C96bNPEGG3d5xNffKA-1738268091-1.0.1.1-Prq9_iZeuOOkbPubbRwkChc_CVXm4yPBo9cpYA00ryBJtZR.NK0Ad3btyrOQslfu9DL.T3heWLMnZUKmUH29TA; path=/; expires=Thu, 30-Jan-25 20:44:51 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare'})
+2025-01-30 17:14:51,979 - groq._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "D:\ProjetosIA\ViasoftServerConstruShowIA\venv\Lib\site-packages\groq\_base_client.py", line 1040, in _request
+    response.raise_for_status()
+  File "D:\ProjetosIA\ViasoftServerConstruShowIA\venv\Lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '413 Payload Too Large' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/413
+2025-01-30 17:14:51,980 - groq._base_client - DEBUG - Not retrying
+2025-01-30 17:14:51,980 - groq._base_client - DEBUG - Re-raising status error
+2025-01-30 17:14:51,980 - root - ERROR - Erro no LLM: Error code: 413 - {'error': {'message': 'Request too large for model `llama3-8b-8192` in organization `org_01jd77p50ge9eb04m2a4k2c329` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 6571, please reduce your message size and try again. Visit https://console.groq.com/docs/rate-limits for more information.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2025-01-30 17:14:51,981 - root - DEBUG - Salva a mensagem da IA no banco de dados
+2025-01-30 17:14:51,990 - root - DEBUG - Requisição finalizada
+2025-01-30 17:15:02,401 - root - DEBUG - Inicio do processamento da equisição da mensagem
+2025-01-30 17:15:02,401 - root - DEBUG - Identifica a entidade principal da pergunta
+2025-01-30 17:15:02,407 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
+2025-01-30 17:15:02,409 - root - DEBUG - Realiza a divisão em submenssagens
+2025-01-30 17:15:02,410 - root - DEBUG - Identifica as entidades de cada submenssagem e realiza a análise dos seus relacionamentos
+2025-01-30 17:15:02,410 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
+2025-01-30 17:15:02,412 - root - DEBUG - Classifica o domínio das mensagens -> contextual_messages: [{'success': True, 'path_rn': '', 'entitie': '', 'missing': [], 'short_message': 'Oi', 'string_intention': 'greeting', 'sub_message_hash': '024bd566f72708600a0006c04accb06bf692598bc53de3d08cf5f9f19856ce75'}], conf: {'lowercase': 'True', 'remove_accents_and_special_characters': 'True', 'remove_punctuation': 'True'}
+2025-01-30 17:15:02,413 - root - DEBUG - Inicia o For
+2025-01-30 17:15:02,413 - root - DEBUG - É greeting
+2025-01-30 17:15:02,413 - root - DEBUG - Inicia a geração da resposta
+2025-01-30 17:15:03,254 - httpcore.connection - DEBUG - close.started
+2025-01-30 17:15:03,255 - httpcore.connection - DEBUG - close.complete
+2025-01-30 17:15:03,255 - httpcore.connection - DEBUG - close.started
+2025-01-30 17:15:03,256 - httpcore.connection - DEBUG - close.complete
+2025-01-30 17:15:03,256 - httpcore.connection - DEBUG - close.started
+2025-01-30 17:15:03,256 - httpcore.connection - DEBUG - close.complete
+2025-01-30 17:15:03,327 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-01-30 17:15:03,327 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=None socket_options=None
+2025-01-30 17:15:03,329 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001EA93B7EBD0>
+2025-01-30 17:15:03,329 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001EA93B742D0> server_hostname='api.groq.com' timeout=None
+2025-01-30 17:15:03,377 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001EA93B7F470>
+2025-01-30 17:15:03,377 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-01-30 17:15:03,378 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-01-30 17:15:03,378 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-01-30 17:15:03,378 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-01-30 17:15:03,379 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-01-30 17:15:03,795 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 413, b'Payload Too Large', [(b'Date', b'Thu, 30 Jan 2025 20:15:03 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'361'), (b'Connection', b'keep-alive'), (b'CF-Ray', b'90a421bdeb6ae2d4-GIG'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Retry-After', b'7'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Vary', b'Origin, Accept-Encoding'), (b'Via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'x-groq-region', b'us-west-1'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14400'), (b'x-ratelimit-remaining-tokens', b'6000'), (b'x-ratelimit-reset-requests', b'0s'), (b'x-ratelimit-reset-tokens', b'0s'), (b'x-request-id', b'req_01jjwdmmtgetktrmww16jmd2v9'), (b'Set-Cookie', b'__cf_bm=ZGYVvZCQEEQUYO1bg6tiZMyg5u20EAeBazjXIWQWPc4-1738268103-1.0.1.1-Mxd1bSMlq6j1ILK037W1r33t5wldEZ.QOt..4QwQApCslhnzBaZUJyhBCDlDNo4ydVbRWZkiJzxSW1pk.VLHKQ; path=/; expires=Thu, 30-Jan-25 20:45:03 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare')])
+2025-01-30 17:15:03,797 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2025-01-30 17:15:03,797 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-01-30 17:15:03,797 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-01-30 17:15:03,798 - httpcore.http11 - DEBUG - response_closed.started
+2025-01-30 17:15:03,798 - httpcore.http11 - DEBUG - response_closed.complete
+2025-01-30 17:15:03,799 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "413 Payload Too Large" Headers({'date': 'Thu, 30 Jan 2025 20:15:03 GMT', 'content-type': 'application/json', 'content-length': '361', 'connection': 'keep-alive', 'cf-ray': '90a421bdeb6ae2d4-GIG', 'cf-cache-status': 'DYNAMIC', 'retry-after': '7', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin, Accept-Encoding', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'x-groq-region': 'us-west-1', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14400', 'x-ratelimit-remaining-tokens': '6000', 'x-ratelimit-reset-requests': '0s', 'x-ratelimit-reset-tokens': '0s', 'x-request-id': 'req_01jjwdmmtgetktrmww16jmd2v9', 'set-cookie': '__cf_bm=ZGYVvZCQEEQUYO1bg6tiZMyg5u20EAeBazjXIWQWPc4-1738268103-1.0.1.1-Mxd1bSMlq6j1ILK037W1r33t5wldEZ.QOt..4QwQApCslhnzBaZUJyhBCDlDNo4ydVbRWZkiJzxSW1pk.VLHKQ; path=/; expires=Thu, 30-Jan-25 20:45:03 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare'})
+2025-01-30 17:15:03,800 - groq._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "D:\ProjetosIA\ViasoftServerConstruShowIA\venv\Lib\site-packages\groq\_base_client.py", line 1040, in _request
+    response.raise_for_status()
+  File "D:\ProjetosIA\ViasoftServerConstruShowIA\venv\Lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '413 Payload Too Large' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/413
+2025-01-30 17:15:03,802 - groq._base_client - DEBUG - Not retrying
+2025-01-30 17:15:03,802 - groq._base_client - DEBUG - Re-raising status error
+2025-01-30 17:15:03,803 - root - ERROR - Erro no LLM: Error code: 413 - {'error': {'message': 'Request too large for model `llama3-8b-8192` in organization `org_01jd77p50ge9eb04m2a4k2c329` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 6685, please reduce your message size and try again. Visit https://console.groq.com/docs/rate-limits for more information.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2025-01-30 17:15:03,803 - root - DEBUG - Salva a mensagem da IA no banco de dados
+2025-01-30 17:15:03,809 - root - DEBUG - Requisição finalizada
+2025-01-30 17:17:18,314 - root - WARNING - Interrupção manual recebida. Encerrando serviço...
+2025-01-30 17:17:18,315 - root - DEBUG - Encerrando o serviço...
+2025-01-30 17:17:18,315 - root - DEBUG - Aguardando o término da thread do servidor...
+2025-01-30 17:17:23,326 - root - ERROR - A thread do servidor não foi encerrada. Forçando o término do programa.
+2025-01-30 17:18:31,500 - root - DEBUG - Executando como serviço via NSSM.
+2025-01-30 17:18:31,501 - root - DEBUG - Serviço sendo inicializado
+2025-01-30 17:18:31,501 - root - DEBUG - Iniciando a criação do app
+2025-01-30 17:18:31,501 - root - DEBUG - Servidor iniciado em uma thread separada.
+2025-01-30 17:18:31,502 - root - DEBUG - Iniciando a instância do SQLAlchemy (Database)...
+2025-01-30 17:18:31,502 - root - DEBUG - Iniciando o banco de dados com a aplicação
+2025-01-30 17:18:31,584 - root - DEBUG - Verificando a conexão com o banco de dados...
+2025-01-30 17:18:32,026 - root - DEBUG - Conexão com o banco de dados verificada com sucesso: (1,)
+2025-01-30 17:18:32,028 - waitress - INFO - Serving on http://127.0.0.1:2710
+2025-01-30 17:18:36,139 - root - DEBUG - Inicio do processamento da equisição da mensagem
+2025-01-30 17:18:36,140 - root - DEBUG - Identifica a entidade principal da pergunta
+2025-01-30 17:18:36,148 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
+2025-01-30 17:18:37,135 - root - DEBUG - Realiza a divisão em submenssagens
+2025-01-30 17:18:37,136 - root - DEBUG - Identifica as entidades de cada submenssagem e realiza a análise dos seus relacionamentos
+2025-01-30 17:18:37,136 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
+2025-01-30 17:18:37,141 - root - DEBUG - Classifica o domínio das mensagens -> contextual_messages: [{'success': True, 'path_rn': '', 'entitie': '', 'missing': [], 'short_message': 'Oi', 'string_intention': 'greeting', 'sub_message_hash': '686c019d47b551072811c0b9bf7fd6c9f559d2451888d73c25ce97f39ccac46c'}], conf: {'lowercase': 'True', 'remove_accents_and_special_characters': 'True', 'remove_punctuation': 'True'}
+2025-01-30 17:18:37,142 - root - DEBUG - Inicia o For
+2025-01-30 17:18:37,142 - root - DEBUG - É greeting
+2025-01-30 17:18:37,143 - root - DEBUG - Inicia a geração da resposta
+2025-01-30 17:18:38,098 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'REGRAS DE COMPORTAMENTO: Perfil: Você é um assistente chamado EVO. Foi criado paara auxiliar na busca de informações, análise de cenários e auxiliar na tomada de decisão em cima dos dados do sistema Construshow,só informe isso se alguem perguntar!1. Responda em linguagem natural.2. Sempre responda de forma clara e objetiva. | 2. Caso a pergunta seja ambígua, peça mais detalhes antes de responder. | 3. Evite suposições sem dados concretos. | 4. Responda como se tivesse acesso direto aos dados, sem informar que os dados foram recebidos | 5. Qualquer análise solicitada deve ser em cima dos dados recebidos. | 6. Responda somente em português - Brasil | 7. Mantenha as respostas no contexto da pergunta e o conjunto de dados, caso seja fora de contexto informe ao usuário solicitando uma pergunta mais específica'}, {'role': 'user', 'content': 'Oi'}], 'model': 'llama3-8b-8192', 'max_tokens': 4000, 'n': 1, 'stop': None, 'stream': False, 'temperature': 0.7}}
+2025-01-30 17:18:38,127 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-01-30 17:18:38,128 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=None socket_options=None
+2025-01-30 17:18:38,133 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000023825478DA0>
+2025-01-30 17:18:38,133 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000238407105D0> server_hostname='api.groq.com' timeout=None
+2025-01-30 17:18:38,189 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000238404DBF20>
+2025-01-30 17:18:38,190 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-01-30 17:18:38,190 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-01-30 17:18:38,191 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-01-30 17:18:38,191 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-01-30 17:18:38,192 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-01-30 17:18:39,077 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 30 Jan 2025 20:18:39 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'CF-Ray', b'90a426fc7e6ce0e3-GIG'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Vary', b'Origin, Accept-Encoding'), (b'Via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'x-groq-region', b'us-west-1'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'5783'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'2.17s'), (b'x-request-id', b'req_01jjwdv73dfphtjq48tnptwvcr'), (b'Set-Cookie', b'__cf_bm=HMhMgiPrGR1jO0ptT.It7nNPO3WghKmtEYhYSNeS6k4-1738268319-1.0.1.1-PisZBrrTEqeUkbLFfIAnwHRm_tYmemzA33.hm1NUt4vSn.EgMMCTuSV40.Ug1D8N1R7PCHSCLSOggFf4FIIMQA; path=/; expires=Thu, 30-Jan-25 20:48:39 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'Content-Encoding', b'gzip')])
+2025-01-30 17:18:39,079 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-30 17:18:39,080 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-01-30 17:18:39,081 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-01-30 17:18:39,081 - httpcore.http11 - DEBUG - response_closed.started
+2025-01-30 17:18:39,081 - httpcore.http11 - DEBUG - response_closed.complete
+2025-01-30 17:18:39,081 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Thu, 30 Jan 2025 20:18:39 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cf-ray': '90a426fc7e6ce0e3-GIG', 'cf-cache-status': 'DYNAMIC', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin, Accept-Encoding', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'x-groq-region': 'us-west-1', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '5783', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '2.17s', 'x-request-id': 'req_01jjwdv73dfphtjq48tnptwvcr', 'set-cookie': '__cf_bm=HMhMgiPrGR1jO0ptT.It7nNPO3WghKmtEYhYSNeS6k4-1738268319-1.0.1.1-PisZBrrTEqeUkbLFfIAnwHRm_tYmemzA33.hm1NUt4vSn.EgMMCTuSV40.Ug1D8N1R7PCHSCLSOggFf4FIIMQA; path=/; expires=Thu, 30-Jan-25 20:48:39 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'content-encoding': 'gzip'})
+2025-01-30 17:18:39,094 - root - DEBUG - Salva a mensagem da IA no banco de dados
+2025-01-30 17:18:39,111 - root - DEBUG - Requisição finalizada
+2025-01-30 17:19:10,555 - root - DEBUG - Inicio do processamento da equisição da mensagem
+2025-01-30 17:19:10,556 - root - DEBUG - Identifica a entidade principal da pergunta
+2025-01-30 17:19:10,563 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
+2025-01-30 17:19:10,567 - root - DEBUG - Realiza a divisão em submenssagens
+2025-01-30 17:19:10,567 - root - DEBUG - Identifica as entidades de cada submenssagem e realiza a análise dos seus relacionamentos
+2025-01-30 17:19:10,568 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
+2025-01-30 17:19:10,576 - root - DEBUG - Classifica o domínio das mensagens -> contextual_messages: [{'success': True, 'path_rn': '/cart', 'entitie': '', 'missing': [], 'short_message': 'Analise a venda e forneça insights para melhorá-la', 'string_intention': 'examine', 'sub_message_hash': '4747c72614f778fb6bb8fed2535186cd047013ca2516e0e6db31be2eadb24d4c'}], conf: {'lowercase': 'True', 'remove_accents_and_special_characters': 'True', 'remove_punctuation': 'True'}
+2025-01-30 17:19:10,577 - root - DEBUG - Inicia o For
+2025-01-30 17:19:10,577 - root - DEBUG - Inicia a classificação
+2025-01-30 17:19:10,578 - root - DEBUG - Carregando modelo e componentes
+2025-01-30 17:19:10,701 - httpcore.connection - DEBUG - close.started
+2025-01-30 17:19:10,702 - httpcore.connection - DEBUG - close.complete
+2025-01-30 17:19:12,060 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-01-30 17:19:13,407 - root - DEBUG - Domínio convertido: examine_cart
+2025-01-30 17:19:13,408 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
+2025-01-30 17:19:13,408 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\examine\cart
+2025-01-30 17:19:13,408 - root - DEBUG - Carregando modelo: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\examine\cart\examine_cart_best_model.keras
+2025-01-30 17:19:13,769 - root - DEBUG - Modelo carregado com sucesso.
+2025-01-30 17:19:13,770 - root - DEBUG - Carregando tokenizer: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\examine\cart\examine_cart_tokenizer.pkl
+2025-01-30 17:19:13,782 - root - DEBUG - Tokenizer carregado com sucesso.
+2025-01-30 17:19:13,783 - root - DEBUG - Carregando MultiLabelBinarizer: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\examine\cart\examine_cart_mlb.pkl
+2025-01-30 17:19:13,784 - root - DEBUG - MultiLabelBinarizer carregado com sucesso.
+2025-01-30 17:19:13,784 - root - DEBUG - Modelo carregado corretamente
+2025-01-30 17:19:13,785 - root - DEBUG - Tokenizer carregado corretamente
+2025-01-30 17:19:13,785 - root - DEBUG - MultiLabelBinarizer carregado corretamente
+2025-01-30 17:19:13,786 - root - DEBUG - Iniciando a predição
+2025-01-30 17:19:14,752 - root - DEBUG - Inicia a geração da resposta
+2025-01-30 17:19:15,730 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-01-30 17:19:15,731 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=None socket_options=None
+2025-01-30 17:19:15,736 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002384C4BD4F0>
+2025-01-30 17:19:15,736 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000002384BF03150> server_hostname='api.groq.com' timeout=None
+2025-01-30 17:19:15,787 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002384BD0B6E0>
+2025-01-30 17:19:15,787 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-01-30 17:19:15,788 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-01-30 17:19:15,788 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-01-30 17:19:15,788 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-01-30 17:19:15,789 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-01-30 17:19:16,024 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 413, b'Payload Too Large', [(b'Date', b'Thu, 30 Jan 2025 20:19:15 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'361'), (b'Connection', b'keep-alive'), (b'CF-Ray', b'90a427e77e48e2a2-GIG'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Retry-After', b'5'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Vary', b'Origin, Accept-Encoding'), (b'x-groq-region', b'us-central-1'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14400'), (b'x-ratelimit-remaining-tokens', b'6000'), (b'x-ratelimit-reset-requests', b'0s'), (b'x-ratelimit-reset-tokens', b'0s'), (b'x-request-id', b'req_01jjwdwb8yexqtd8tnxtv33v3x'), (b'Set-Cookie', b'__cf_bm=OiLKwMwUXcmNp_gNwdQpfWpWbox0Vo7VOej8NYaSVSI-1738268355-1.0.1.1-tzxqblsgC9Rg0yRjdTTmA.AXa_sWU.wRN9e6ed4yP25h2Pr.7RlSjGjnfQfaqnKYstI8F0CBDM9NoVmR_.1YEA; path=/; expires=Thu, 30-Jan-25 20:49:15 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-01-30 17:19:16,027 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2025-01-30 17:19:16,027 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-01-30 17:19:16,028 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-01-30 17:19:16,028 - httpcore.http11 - DEBUG - response_closed.started
+2025-01-30 17:19:16,028 - httpcore.http11 - DEBUG - response_closed.complete
+2025-01-30 17:19:16,029 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "413 Payload Too Large" Headers({'date': 'Thu, 30 Jan 2025 20:19:15 GMT', 'content-type': 'application/json', 'content-length': '361', 'connection': 'keep-alive', 'cf-ray': '90a427e77e48e2a2-GIG', 'cf-cache-status': 'DYNAMIC', 'retry-after': '5', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin, Accept-Encoding', 'x-groq-region': 'us-central-1', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14400', 'x-ratelimit-remaining-tokens': '6000', 'x-ratelimit-reset-requests': '0s', 'x-ratelimit-reset-tokens': '0s', 'x-request-id': 'req_01jjwdwb8yexqtd8tnxtv33v3x', 'set-cookie': '__cf_bm=OiLKwMwUXcmNp_gNwdQpfWpWbox0Vo7VOej8NYaSVSI-1738268355-1.0.1.1-tzxqblsgC9Rg0yRjdTTmA.AXa_sWU.wRN9e6ed4yP25h2Pr.7RlSjGjnfQfaqnKYstI8F0CBDM9NoVmR_.1YEA; path=/; expires=Thu, 30-Jan-25 20:49:15 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-01-30 17:19:16,030 - groq._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "D:\ProjetosIA\ViasoftServerConstruShowIA\venv\Lib\site-packages\groq\_base_client.py", line 1040, in _request
+    response.raise_for_status()
+  File "D:\ProjetosIA\ViasoftServerConstruShowIA\venv\Lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '413 Payload Too Large' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/413
+2025-01-30 17:19:16,034 - groq._base_client - DEBUG - Not retrying
+2025-01-30 17:19:16,035 - groq._base_client - DEBUG - Re-raising status error
+2025-01-30 17:19:16,035 - root - ERROR - Erro no LLM: Error code: 413 - {'error': {'message': 'Request too large for model `llama3-8b-8192` in organization `org_01jd77p50ge9eb04m2a4k2c329` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 6405, please reduce your message size and try again. Visit https://console.groq.com/docs/rate-limits for more information.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2025-01-30 17:19:16,036 - root - DEBUG - Salva a mensagem da IA no banco de dados
+2025-01-30 17:19:16,051 - root - DEBUG - Requisição finalizada
+2025-01-30 17:20:58,840 - root - WARNING - Interrupção manual recebida. Encerrando serviço...
+2025-01-30 17:20:58,841 - root - DEBUG - Encerrando o serviço...
+2025-01-30 17:20:58,841 - root - DEBUG - Aguardando o término da thread do servidor...
+2025-01-30 17:21:03,842 - root - DEBUG - Encerrando o serviço...
+2025-01-30 17:21:03,843 - root - INFO - Serviço encerrado com sucesso.
+2025-01-30 17:21:03,989 - httpcore.connection - DEBUG - close.started
+2025-01-30 17:21:03,990 - httpcore.connection - DEBUG - close.complete
+2025-01-30 17:21:32,918 - root - DEBUG - Executando como serviço via NSSM.
+2025-01-30 17:21:32,919 - root - DEBUG - Serviço sendo inicializado
+2025-01-30 17:21:32,920 - root - DEBUG - Iniciando a criação do app
+2025-01-30 17:21:32,920 - root - DEBUG - Servidor iniciado em uma thread separada.
+2025-01-30 17:21:32,920 - root - DEBUG - Iniciando a instância do SQLAlchemy (Database)...
+2025-01-30 17:21:32,921 - root - DEBUG - Iniciando o banco de dados com a aplicação
+2025-01-30 17:21:33,020 - root - DEBUG - Verificando a conexão com o banco de dados...
+2025-01-30 17:21:33,413 - root - DEBUG - Conexão com o banco de dados verificada com sucesso: (1,)
+2025-01-30 17:21:33,416 - waitress - INFO - Serving on http://127.0.0.1:2710
+2025-01-30 17:21:40,255 - root - DEBUG - Inicio do processamento da equisição da mensagem
+2025-01-30 17:21:40,256 - root - DEBUG - Identifica a entidade principal da pergunta
+2025-01-30 17:21:40,262 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
+2025-01-30 17:21:41,015 - root - DEBUG - Realiza a divisão em submenssagens
+2025-01-30 17:21:41,016 - root - DEBUG - Identifica as entidades de cada submenssagem e realiza a análise dos seus relacionamentos
+2025-01-30 17:21:41,016 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
+2025-01-30 17:21:41,025 - root - DEBUG - Classifica o domínio das mensagens -> contextual_messages: [{'success': True, 'path_rn': '/cart', 'entitie': '', 'missing': [], 'short_message': 'Analise a venda e forneça insights para melhorá-la', 'string_intention': 'examine', 'sub_message_hash': 'f077e0c3d6565acae319ce5d0ea8bf3f813fd28e0da1c82689812d4dd10a50cf'}], conf: {'lowercase': 'True', 'remove_accents_and_special_characters': 'True', 'remove_punctuation': 'True'}
+2025-01-30 17:21:41,025 - root - DEBUG - Inicia o For
+2025-01-30 17:21:41,025 - root - DEBUG - Inicia a classificação
+2025-01-30 17:21:41,025 - root - DEBUG - Carregando modelo e componentes
+2025-01-30 17:21:42,500 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-01-30 17:21:43,798 - root - DEBUG - Domínio convertido: examine_cart
+2025-01-30 17:21:43,798 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
+2025-01-30 17:21:43,799 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\examine\cart
+2025-01-30 17:21:43,799 - root - DEBUG - Carregando modelo: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\examine\cart\examine_cart_best_model.keras
+2025-01-30 17:21:44,088 - root - DEBUG - Modelo carregado com sucesso.
+2025-01-30 17:21:44,089 - root - DEBUG - Carregando tokenizer: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\examine\cart\examine_cart_tokenizer.pkl
+2025-01-30 17:21:44,090 - root - DEBUG - Tokenizer carregado com sucesso.
+2025-01-30 17:21:44,091 - root - DEBUG - Carregando MultiLabelBinarizer: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\examine\cart\examine_cart_mlb.pkl
+2025-01-30 17:21:44,091 - root - DEBUG - MultiLabelBinarizer carregado com sucesso.
+2025-01-30 17:21:44,092 - root - DEBUG - Modelo carregado corretamente
+2025-01-30 17:21:44,092 - root - DEBUG - Tokenizer carregado corretamente
+2025-01-30 17:21:44,092 - root - DEBUG - MultiLabelBinarizer carregado corretamente
+2025-01-30 17:21:44,093 - root - DEBUG - Iniciando a predição
+2025-01-30 17:21:44,942 - root - DEBUG - Inicia a geração da resposta
+2025-01-30 17:21:45,739 - root - ERROR - Erro no LLM: ChatMemory.save_memory_to_file() missing 1 required positional argument: 'id_chat'
+2025-01-30 17:21:45,740 - root - DEBUG - Salva a mensagem da IA no banco de dados
+2025-01-30 17:21:45,757 - root - DEBUG - Requisição finalizada
+2025-01-30 17:22:11,618 - root - WARNING - Interrupção manual recebida. Encerrando serviço...
+2025-01-30 17:22:11,619 - root - DEBUG - Encerrando o serviço...
+2025-01-30 17:22:11,619 - root - DEBUG - Aguardando o término da thread do servidor...
+2025-01-30 17:22:16,625 - root - ERROR - A thread do servidor não foi encerrada. Forçando o término do programa.
+2025-01-30 17:22:55,687 - root - DEBUG - Executando como serviço via NSSM.
+2025-01-30 17:22:55,687 - root - DEBUG - Serviço sendo inicializado
+2025-01-30 17:22:55,688 - root - DEBUG - Iniciando a criação do app
+2025-01-30 17:22:55,688 - root - DEBUG - Servidor iniciado em uma thread separada.
+2025-01-30 17:22:55,688 - root - DEBUG - Iniciando a instância do SQLAlchemy (Database)...
+2025-01-30 17:22:55,689 - root - DEBUG - Iniciando o banco de dados com a aplicação
+2025-01-30 17:22:55,775 - root - DEBUG - Verificando a conexão com o banco de dados...
+2025-01-30 17:22:56,114 - root - DEBUG - Conexão com o banco de dados verificada com sucesso: (1,)
+2025-01-30 17:22:56,118 - waitress - INFO - Serving on http://127.0.0.1:2710
+2025-01-30 17:23:00,352 - root - DEBUG - Inicio do processamento da equisição da mensagem
+2025-01-30 17:23:00,352 - root - DEBUG - Identifica a entidade principal da pergunta
+2025-01-30 17:23:00,369 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
+2025-01-30 17:23:01,163 - root - DEBUG - Realiza a divisão em submenssagens
+2025-01-30 17:23:01,164 - root - DEBUG - Identifica as entidades de cada submenssagem e realiza a análise dos seus relacionamentos
+2025-01-30 17:23:01,164 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
+2025-01-30 17:23:01,172 - root - DEBUG - Classifica o domínio das mensagens -> contextual_messages: [{'success': True, 'path_rn': '/cart', 'entitie': '', 'missing': [], 'short_message': 'Analise a venda e forneça insights para melhorá-la', 'string_intention': 'examine', 'sub_message_hash': '76d63cee9e89e1d4fb6fba9e955c78814d232c60d3e760b14c7b3f7d741bc5a1'}], conf: {'lowercase': 'True', 'remove_accents_and_special_characters': 'True', 'remove_punctuation': 'True'}
+2025-01-30 17:23:01,173 - root - DEBUG - Inicia o For
+2025-01-30 17:23:01,173 - root - DEBUG - Inicia a classificação
+2025-01-30 17:23:01,174 - root - DEBUG - Carregando modelo e componentes
+2025-01-30 17:23:02,534 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-01-30 17:23:03,837 - root - DEBUG - Domínio convertido: examine_cart
+2025-01-30 17:23:03,837 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
+2025-01-30 17:23:03,837 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\examine\cart
+2025-01-30 17:23:03,838 - root - DEBUG - Carregando modelo: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\examine\cart\examine_cart_best_model.keras
+2025-01-30 17:23:04,124 - root - DEBUG - Modelo carregado com sucesso.
+2025-01-30 17:23:04,125 - root - DEBUG - Carregando tokenizer: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\examine\cart\examine_cart_tokenizer.pkl
+2025-01-30 17:23:04,127 - root - DEBUG - Tokenizer carregado com sucesso.
+2025-01-30 17:23:04,127 - root - DEBUG - Carregando MultiLabelBinarizer: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\examine\cart\examine_cart_mlb.pkl
+2025-01-30 17:23:04,127 - root - DEBUG - MultiLabelBinarizer carregado com sucesso.
+2025-01-30 17:23:04,128 - root - DEBUG - Modelo carregado corretamente
+2025-01-30 17:23:04,128 - root - DEBUG - Tokenizer carregado corretamente
+2025-01-30 17:23:04,129 - root - DEBUG - MultiLabelBinarizer carregado corretamente
+2025-01-30 17:23:04,129 - root - DEBUG - Iniciando a predição
+2025-01-30 17:23:05,005 - root - DEBUG - Inicia a geração da resposta
+2025-01-30 17:23:05,993 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-01-30 17:23:05,994 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=None socket_options=None
+2025-01-30 17:23:06,001 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000023CEA27BB00>
+2025-01-30 17:23:06,002 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000023CEA5DDBD0> server_hostname='api.groq.com' timeout=None
+2025-01-30 17:23:06,126 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000023CB68177A0>
+2025-01-30 17:23:06,127 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-01-30 17:23:06,127 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-01-30 17:23:06,128 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-01-30 17:23:06,128 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-01-30 17:23:06,129 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-01-30 17:23:06,554 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 413, b'Payload Too Large', [(b'Date', b'Thu, 30 Jan 2025 20:23:06 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'361'), (b'Connection', b'keep-alive'), (b'CF-Ray', b'90a42d87095ae11f-GIG'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Retry-After', b'4'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Vary', b'Origin, Accept-Encoding'), (b'Via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'x-groq-region', b'us-west-1'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14400'), (b'x-ratelimit-remaining-tokens', b'6000'), (b'x-ratelimit-reset-requests', b'0s'), (b'x-ratelimit-reset-tokens', b'0s'), (b'x-request-id', b'req_01jjwe3c8dfkrvcp0gyzx2crj5'), (b'Set-Cookie', b'__cf_bm=A3HEA0Aj0TvbsBVTq3b_Vq9h59k5cRIuLAX3BahoZHk-1738268586-1.0.1.1-dBkWZjmqwPZi4GML3rWJBgvDBueFPjBt5xArPmcGk3QD2q4gdiD6MkoEReGlMQMnGc3IWPEuQ8gC17YW_CqQcw; path=/; expires=Thu, 30-Jan-25 20:53:06 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare')])
+2025-01-30 17:23:06,556 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2025-01-30 17:23:06,557 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-01-30 17:23:06,557 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-01-30 17:23:06,558 - httpcore.http11 - DEBUG - response_closed.started
+2025-01-30 17:23:06,558 - httpcore.http11 - DEBUG - response_closed.complete
+2025-01-30 17:23:06,559 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "413 Payload Too Large" Headers({'date': 'Thu, 30 Jan 2025 20:23:06 GMT', 'content-type': 'application/json', 'content-length': '361', 'connection': 'keep-alive', 'cf-ray': '90a42d87095ae11f-GIG', 'cf-cache-status': 'DYNAMIC', 'retry-after': '4', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin, Accept-Encoding', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'x-groq-region': 'us-west-1', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14400', 'x-ratelimit-remaining-tokens': '6000', 'x-ratelimit-reset-requests': '0s', 'x-ratelimit-reset-tokens': '0s', 'x-request-id': 'req_01jjwe3c8dfkrvcp0gyzx2crj5', 'set-cookie': '__cf_bm=A3HEA0Aj0TvbsBVTq3b_Vq9h59k5cRIuLAX3BahoZHk-1738268586-1.0.1.1-dBkWZjmqwPZi4GML3rWJBgvDBueFPjBt5xArPmcGk3QD2q4gdiD6MkoEReGlMQMnGc3IWPEuQ8gC17YW_CqQcw; path=/; expires=Thu, 30-Jan-25 20:53:06 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare'})
+2025-01-30 17:23:06,560 - groq._base_client - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "D:\ProjetosIA\ViasoftServerConstruShowIA\venv\Lib\site-packages\groq\_base_client.py", line 1040, in _request
+    response.raise_for_status()
+  File "D:\ProjetosIA\ViasoftServerConstruShowIA\venv\Lib\site-packages\httpx\_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '413 Payload Too Large' for url 'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/413
+2025-01-30 17:23:06,562 - groq._base_client - DEBUG - Not retrying
+2025-01-30 17:23:06,562 - groq._base_client - DEBUG - Re-raising status error
+2025-01-30 17:23:06,563 - root - ERROR - Erro no LLM: Error code: 413 - {'error': {'message': 'Request too large for model `llama3-8b-8192` in organization `org_01jd77p50ge9eb04m2a4k2c329` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 6341, please reduce your message size and try again. Visit https://console.groq.com/docs/rate-limits for more information.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2025-01-30 17:23:06,563 - root - DEBUG - Salva a mensagem da IA no banco de dados
+2025-01-30 17:23:06,587 - root - DEBUG - Requisição finalizada
+2025-01-30 17:24:40,182 - root - WARNING - Interrupção manual recebida. Encerrando serviço...
+2025-01-30 17:24:40,182 - root - DEBUG - Encerrando o serviço...
+2025-01-30 17:24:40,183 - root - DEBUG - Aguardando o término da thread do servidor...
+2025-01-30 17:24:45,187 - root - ERROR - A thread do servidor não foi encerrada. Forçando o término do programa.
+2025-01-30 17:25:32,031 - root - DEBUG - Executando como serviço via NSSM.
+2025-01-30 17:25:32,031 - root - DEBUG - Serviço sendo inicializado
+2025-01-30 17:25:32,032 - root - DEBUG - Iniciando a criação do app
+2025-01-30 17:25:32,032 - root - DEBUG - Servidor iniciado em uma thread separada.
+2025-01-30 17:25:32,033 - root - DEBUG - Iniciando a instância do SQLAlchemy (Database)...
+2025-01-30 17:25:32,033 - root - DEBUG - Iniciando o banco de dados com a aplicação
+2025-01-30 17:25:32,114 - root - DEBUG - Verificando a conexão com o banco de dados...
+2025-01-30 17:25:32,438 - root - DEBUG - Conexão com o banco de dados verificada com sucesso: (1,)
+2025-01-30 17:25:32,450 - waitress - INFO - Serving on http://127.0.0.1:2710
+2025-01-30 17:25:59,505 - root - DEBUG - Inicio do processamento da equisição da mensagem
+2025-01-30 17:25:59,506 - root - DEBUG - Identifica a entidade principal da pergunta
+2025-01-30 17:25:59,513 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
+2025-01-30 17:26:00,317 - root - DEBUG - Realiza a divisão em submenssagens
+2025-01-30 17:26:00,318 - root - DEBUG - Identifica as entidades de cada submenssagem e realiza a análise dos seus relacionamentos
+2025-01-30 17:26:00,318 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
+2025-01-30 17:26:00,328 - root - DEBUG - Classifica o domínio das mensagens -> contextual_messages: [{'success': True, 'path_rn': '/cart', 'entitie': '', 'missing': [], 'short_message': 'Analise a venda e forneça insights para melhorá-la', 'string_intention': 'examine', 'sub_message_hash': '3e17ec96b39ef73854f7f22c77f18cb1621b5587ee8492abcdef2a15ce4fd0d7'}], conf: {'lowercase': 'True', 'remove_accents_and_special_characters': 'True', 'remove_punctuation': 'True'}
+2025-01-30 17:26:00,329 - root - DEBUG - Inicia o For
+2025-01-30 17:26:00,330 - root - DEBUG - Inicia a classificação
+2025-01-30 17:26:00,330 - root - DEBUG - Carregando modelo e componentes
+2025-01-30 17:26:01,804 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-01-30 17:26:03,046 - root - DEBUG - Domínio convertido: examine_cart
+2025-01-30 17:26:03,047 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
+2025-01-30 17:26:03,047 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\examine\cart
+2025-01-30 17:26:03,047 - root - DEBUG - Carregando modelo: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\examine\cart\examine_cart_best_model.keras
+2025-01-30 17:26:03,338 - root - DEBUG - Modelo carregado com sucesso.
+2025-01-30 17:26:03,339 - root - DEBUG - Carregando tokenizer: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\examine\cart\examine_cart_tokenizer.pkl
+2025-01-30 17:26:03,340 - root - DEBUG - Tokenizer carregado com sucesso.
+2025-01-30 17:26:03,341 - root - DEBUG - Carregando MultiLabelBinarizer: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\examine\cart\examine_cart_mlb.pkl
+2025-01-30 17:26:03,341 - root - DEBUG - MultiLabelBinarizer carregado com sucesso.
+2025-01-30 17:26:03,341 - root - DEBUG - Modelo carregado corretamente
+2025-01-30 17:26:03,342 - root - DEBUG - Tokenizer carregado corretamente
+2025-01-30 17:26:03,342 - root - DEBUG - MultiLabelBinarizer carregado corretamente
+2025-01-30 17:26:03,343 - root - DEBUG - Iniciando a predição
+2025-01-30 17:26:04,140 - root - DEBUG - Inicia a geração da resposta
+2025-01-30 17:26:05,241 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-01-30 17:26:05,242 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=None socket_options=None
+2025-01-30 17:26:05,281 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001C6C3A2BA10>
+2025-01-30 17:26:05,282 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001C6C35ED9D0> server_hostname='api.groq.com' timeout=None
+2025-01-30 17:26:05,327 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001C6C3515610>
+2025-01-30 17:26:05,328 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-01-30 17:26:05,329 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-01-30 17:26:05,331 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-01-30 17:26:05,331 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-01-30 17:26:05,332 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-01-30 17:26:06,362 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 30 Jan 2025 20:26:06 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'CF-Ray', b'90a431e73984e2b0-GIG'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Vary', b'Origin, Accept-Encoding'), (b'Via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'x-groq-region', b'us-west-1'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'5086'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'9.14s'), (b'x-request-id', b'req_01jjwe8v8bedma41jrs4cqxfp5'), (b'Set-Cookie', b'__cf_bm=3O7.vI17bsXPrw1hNKZkOt406iuhTRZkpqkUvudHhw0-1738268766-1.0.1.1-O4aA6TXae3j_kCF2NPqVmGZ0jR5Uk7JKXm.l31MnzqsvL2IcEuGRbLMpfX1w63wQfbImYryYGCvgnDtRZQaSJg; path=/; expires=Thu, 30-Jan-25 20:56:06 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'Content-Encoding', b'gzip')])
+2025-01-30 17:26:06,364 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-30 17:26:06,365 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-01-30 17:26:06,365 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-01-30 17:26:06,366 - httpcore.http11 - DEBUG - response_closed.started
+2025-01-30 17:26:06,366 - httpcore.http11 - DEBUG - response_closed.complete
+2025-01-30 17:26:06,366 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Thu, 30 Jan 2025 20:26:06 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cf-ray': '90a431e73984e2b0-GIG', 'cf-cache-status': 'DYNAMIC', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin, Accept-Encoding', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'x-groq-region': 'us-west-1', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '5086', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '9.14s', 'x-request-id': 'req_01jjwe8v8bedma41jrs4cqxfp5', 'set-cookie': '__cf_bm=3O7.vI17bsXPrw1hNKZkOt406iuhTRZkpqkUvudHhw0-1738268766-1.0.1.1-O4aA6TXae3j_kCF2NPqVmGZ0jR5Uk7JKXm.l31MnzqsvL2IcEuGRbLMpfX1w63wQfbImYryYGCvgnDtRZQaSJg; path=/; expires=Thu, 30-Jan-25 20:56:06 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'content-encoding': 'gzip'})
+2025-01-30 17:26:06,377 - root - DEBUG - Salva a mensagem da IA no banco de dados
+2025-01-30 17:26:06,385 - root - DEBUG - Requisição finalizada
+2025-01-30 17:27:38,441 - root - DEBUG - Inicio do processamento da equisição de abertura
+2025-01-30 17:27:38,441 - root - DEBUG - Inicia criação do chat
+2025-01-30 17:27:38,449 - root - DEBUG - Inicia processo para unificar dados compartilhados e aninhar mensagens
+2025-01-30 17:28:47,536 - root - DEBUG - Inicio do processamento da equisição da mensagem
+2025-01-30 17:28:47,536 - root - DEBUG - Identifica a entidade principal da pergunta
+2025-01-30 17:28:47,544 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
+2025-01-30 17:28:47,547 - root - DEBUG - Realiza a divisão em submenssagens
+2025-01-30 17:28:47,548 - root - DEBUG - Identifica as entidades de cada submenssagem e realiza a análise dos seus relacionamentos
+2025-01-30 17:28:47,548 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
+2025-01-30 17:28:47,556 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
+2025-01-30 17:28:47,559 - root - DEBUG - Classifica o domínio das mensagens -> contextual_messages: [{'success': True, 'path_rn': '/', 'entitie': '', 'missing': [], 'short_message': 'Seja mais direto e', 'string_intention': 'search', 'sub_message_hash': '80c8b0c91d820ea56dd6e28eeb4db5b81f9cda707a02137b8730f64e2ba55fb8'}, {'success': True, 'path_rn': '', 'entitie': '', 'missing': [], 'short_message': 'me responda o que fazer então', 'string_intention': 'greeting', 'sub_message_hash': '0f0b82c7befe6a29472b82af25e887cdd063191794f9b4918ae16816e83e01cd'}], conf: {'lowercase': 'True', 'remove_accents_and_special_characters': 'True', 'remove_punctuation': 'True'}
+2025-01-30 17:28:47,560 - root - DEBUG - Inicia o For
+2025-01-30 17:28:47,560 - root - DEBUG - É greeting
+2025-01-30 17:28:47,560 - root - DEBUG - É greeting
+2025-01-30 17:28:47,561 - root - DEBUG - Inicia a geração da resposta
+2025-01-30 17:28:48,324 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2025-01-30 17:28:48,325 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=None socket_options=None
+2025-01-30 17:28:48,326 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001C6C3A2B5C0>
+2025-01-30 17:28:48,327 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001C6C35EF0D0> server_hostname='api.groq.com' timeout=None
+2025-01-30 17:28:48,372 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001C6C31EE990>
+2025-01-30 17:28:48,373 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-01-30 17:28:48,373 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-01-30 17:28:48,374 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-01-30 17:28:48,374 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-01-30 17:28:48,375 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-01-30 17:28:49,110 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 30 Jan 2025 20:28:49 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'CF-Ray', b'90a435e21aa2e2aa-GIG'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Vary', b'Origin, Accept-Encoding'), (b'Via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'x-groq-region', b'us-west-1'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'6000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'3670'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'23.3s'), (b'x-request-id', b'req_01jjwedtevftjt58ye1a4pzdf3'), (b'Set-Cookie', b'__cf_bm=s..2dOmk5tFEgmfTK8fXzaDkTm_9c6kc8ETrQbl045g-1738268929-1.0.1.1-ymcqAzPKjOMJQ5S9S6NhKfoWZhuArXRZVRKD3LUXZNPoZaslfXoylhgP0OT2M5YDCTXCZd5TfVXS6OsntjRMRw; path=/; expires=Thu, 30-Jan-25 20:58:49 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'Content-Encoding', b'gzip')])
+2025-01-30 17:28:49,112 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-30 17:28:49,113 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-01-30 17:28:49,113 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-01-30 17:28:49,114 - httpcore.http11 - DEBUG - response_closed.started
+2025-01-30 17:28:49,114 - httpcore.http11 - DEBUG - response_closed.complete
+2025-01-30 17:28:49,114 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Thu, 30 Jan 2025 20:28:49 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cf-ray': '90a435e21aa2e2aa-GIG', 'cf-cache-status': 'DYNAMIC', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin, Accept-Encoding', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'x-groq-region': 'us-west-1', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '6000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '3670', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '23.3s', 'x-request-id': 'req_01jjwedtevftjt58ye1a4pzdf3', 'set-cookie': '__cf_bm=s..2dOmk5tFEgmfTK8fXzaDkTm_9c6kc8ETrQbl045g-1738268929-1.0.1.1-ymcqAzPKjOMJQ5S9S6NhKfoWZhuArXRZVRKD3LUXZNPoZaslfXoylhgP0OT2M5YDCTXCZd5TfVXS6OsntjRMRw; path=/; expires=Thu, 30-Jan-25 20:58:49 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'content-encoding': 'gzip'})
+2025-01-30 17:28:49,118 - root - DEBUG - Salva a mensagem da IA no banco de dados
+2025-01-30 17:28:49,129 - root - DEBUG - Requisição finalizada
+2025-01-30 17:29:08,927 - root - DEBUG - Inicio do processamento da equisição de abertura
+2025-01-30 17:29:08,928 - root - DEBUG - Inicia criação do chat
+2025-01-30 17:29:08,933 - root - DEBUG - Inicia processo para unificar dados compartilhados e aninhar mensagens

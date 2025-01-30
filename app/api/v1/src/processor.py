@@ -3,7 +3,7 @@ from app.client.v1.llm_providers import LLMFactory
 from app.core.chat_memory import ChatMemory
 from app.core.classify.classify import classifier, predict_intention
 from app.database.processing.chat.chat import create_new_chat_detail, create_new_chat_detail_domain, search_chat_header_and_datail, search_or_open_chat
-from app.database.processing.domain_distribution import create_complete_question, search_and_format_domain_data
+from app.database.processing.domain_distribution import search_and_format_domain_data
 from app.database.processing.format_data import unify_data
 from config import loger,conf
 from app.api.v1.utils.split import remove_duplicate_dicts, split_message,generate_unique_hash
@@ -27,10 +27,16 @@ class ChatProcessorMessage:
         """Identifica a entidade principal da pergunta"""
         loger.log('DEBUG',"Identifica a entidade principal da pergunta")
         entity_main = self.process_entities.run_identify_entity_main(message)
+        intention_main = str(predict_intention(message))
 
         """Realiza a divisão em submenssagens"""
         loger.log('DEBUG',"Realiza a divisão em submenssagens")
-        sub_messages = split_message(message)
+        if intention_main != 'examine':
+            sub_messages = split_message(message)
+        else:
+            sub_messages = [] 
+            sub_messages.append(message)
+
 
         """Identifica as entidades de cada submenssagem e realiza a análise dos seus relacionamentos"""
         loger.log('DEBUG',"Identifica as entidades de cada submenssagem e realiza a análise dos seus relacionamentos")
@@ -55,11 +61,8 @@ class ChatProcessorMessage:
         for idx, sub_msg in enumerate(sub_messages):
             memory_temp = self.memory.get_memory(id_chat)
             memory_pending = memory_temp["pending_contexts"]
-            
-                    
-                
             unique_hash_sub_message = generate_unique_hash()
-            message_intention = predict_intention(sub_msg)
+            message_intention = str(predict_intention(sub_msg))
             message = self.cleaner.clean_text(sub_msg)
             entities_ignore = ['greeting','unknown']
             
@@ -76,7 +79,7 @@ class ChatProcessorMessage:
             contextual_messages[idx]['string_intention'] = message_intention
             contextual_messages[idx]['sub_message_hash'] = unique_hash_sub_message
 
-            if contextual_messages[idx]['success'] == False:
+            if contextual_messages[idx]['success'] == False and contextual_messages[idx]['string_intention'] != 'examine':
                 context_pending = {
                     'original_intention': message_intention,
                     'original_entites': entities_msg,
@@ -158,12 +161,13 @@ class ChatProcessorMessage:
             }
 
             # Invocar o LLM com as mensagens diretamente
+            self.memory.save_memory_to_file(id_chat)
             response = chain.invoke(input_messages)
             response_ia = response.get("response", "")
 
         except Exception as e:
             response_ia = f"Erro ao gerar resposta via LLM: {str(e)}"
-            loger.error(f"Erro no LLM: {e}", exc_info=True)
+            loger.log("ERROR", f"Erro no LLM: {e}")
 
         # Adiciona a resposta da IA na memória
         self.memory.add_interaction(

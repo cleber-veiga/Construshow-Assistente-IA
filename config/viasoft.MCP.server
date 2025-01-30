@@ -19,3 +19,4 @@ MobUrlBase=mob
 IAServerIP=127.0.0.1
 IAServerPort=2710
 IAUrlBase=api/v1/chat
+IAServerTimeout=9999

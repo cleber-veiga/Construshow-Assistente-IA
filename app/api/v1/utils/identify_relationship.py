@@ -66,7 +66,7 @@ class ClassifyRelationship:
         return True, [], ""
 
     def run_relationship_processing(self,entities,intention,entities_ignore):
-        if intention not in  entities_ignore:
+        if intention not in  entities_ignore and intention != 'examine':
             self.entities = entities
             valid, missing, main_entity = self.validate_relationship()
 
@@ -84,6 +84,13 @@ class ClassifyRelationship:
                     "path_rn": "",
                     "entitie": main_entity,
                     "missing": missing
+                }
+        elif intention == 'examine':
+            result = {
+                    "success": True,
+                    "path_rn": f"/cart",
+                    "entitie": "", 
+                    "missing": [],
                 }
         else:
             result = {

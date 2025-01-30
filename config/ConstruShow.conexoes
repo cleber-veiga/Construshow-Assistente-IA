@@ -1,5 +1,5 @@
 [ConstruShowX]
-Server=DW205:1521:VIASOFT2
+Server=192.168.89.21:1521:VIASOFT2
 Username=VIASOFTMCP
 Password=VIASOFTMCP
 ProviderName=Oracle
