@@ -1,17 +1,18 @@
-from tensorflow.keras.preprocessing.text import Tokenizer
-from tensorflow.keras.preprocessing.sequence import pad_sequences
-
 class TokenizerWrapperIntention:
     def __init__(self, config):
         self.config = config
-        self.tokenizer = Tokenizer(num_words=config['vocab_size'])
         
     def fit(self, texts):
-        self.tokenizer.fit_on_texts(texts)
+        from tensorflow.keras.preprocessing.text import Tokenizer
+        tokenizer = Tokenizer(num_words=self.config['vocab_size'])
+        tokenizer.fit_on_texts(texts)
         
     def transform(self, texts):
+        from tensorflow.keras.preprocessing.text import Tokenizer
+        from tensorflow.keras.preprocessing.sequence import pad_sequences
+        tokenizer = Tokenizer(num_words=self.config['vocab_size'])
         # Converte textos para sequências
-        sequences = self.tokenizer.texts_to_sequences(texts)
+        sequences = tokenizer.texts_to_sequences(texts)
         max_len = max(len(seq) for seq in sequences)
         # Pad sequences para ter o mesmo tamanho
         padded_sequences = pad_sequences(
@@ -29,14 +30,18 @@ class TokenizerWrapperIntention:
 class TokenizerWrapper:
     def __init__(self, config):
         self.config = config
-        self.tokenizer = Tokenizer(num_words=config['vocab_size'])
         
     def fit(self, texts):
-        self.tokenizer.fit_on_texts(texts)
+        from tensorflow.keras.preprocessing.text import Tokenizer
+        tokenizer = Tokenizer(num_words=self.config['vocab_size'])
+        tokenizer.fit_on_texts(texts)
         
     def transform(self, texts):
+        from tensorflow.keras.preprocessing.text import Tokenizer
+        from tensorflow.keras.preprocessing.sequence import pad_sequences
+        tokenizer = Tokenizer(num_words=self.config['vocab_size'])
         # Converte textos para sequências
-        sequences = self.tokenizer.texts_to_sequences(texts)
+        sequences = tokenizer.texts_to_sequences(texts)
         # Pad sequences para ter o mesmo tamanho
         padded_sequences = pad_sequences(
             sequences, 

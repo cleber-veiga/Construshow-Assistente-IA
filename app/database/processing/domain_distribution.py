@@ -1,6 +1,7 @@
 
 from app.database.processing.chat.chat import search_chat_header_by_id, search_querys_chat
 from app.database.entities.customer.customer import distribute as customer
+from app.database.entities.product.product import distribute as product
 
 def search_and_format_domain_data(domain,id_chat):
     
@@ -16,9 +17,12 @@ def search_and_format_domain_data(domain,id_chat):
 def allocate_domain(query,domain, data_chat):
     if domain.startswith('search_customer'):
         data_return = customer(query,domain, data_chat)
-
-        return data_return
     
+    if domain.startswith('search_product'):
+        data_return = product(query,domain, data_chat)
+
+    return data_return
+
 def create_complete_question(message,domain):
     
     prompt_text = "#PERGUNTA DO USUÁRIO:"

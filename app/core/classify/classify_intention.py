@@ -1,6 +1,5 @@
 import pickle
 import numpy as np
-from tensorflow.keras.models import load_model
 from app.core.data.cleaner import TextCleaner
 
 
@@ -66,6 +65,7 @@ def load_components():
     Carrega o modelo treinado e seus componentes.
     """
     try:
+        from tensorflow.keras.models import load_model
         # Carrega o modelo
         model = load_model("mod/app/models/saved/intention_best_model.keras")
 

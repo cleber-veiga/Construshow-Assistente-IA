@@ -105,7 +105,7 @@ class ChatProcessorMessage:
         loger.log('DEBUG',"Inicia o For")
         for idx, item in enumerate(contextual_messages):
             if item['success'] == True:
-                if item['string_intention'] != 'greeting':
+                if item['string_intention'] != 'greeting' and item['path_rn'] != '/':
                     loger.log('DEBUG',"Inicia a classificação")
                     _, domain, trust, mlb = classifier(item['short_message'], str(item['string_intention']) + str(item['path_rn']), config)
                     
@@ -126,7 +126,7 @@ class ChatProcessorMessage:
         # Processamento de mensagens contextuais
         for idx, item in enumerate(contextual_messages):
             if item['success']:
-                if item['domain'] != 'greeting':
+                if item['domain'] != 'greeting' and item['entitie'] != '/':
                     response_data = search_and_format_domain_data(item['domain'], id_chat)
                     self.memory.add_analysis_data(id_chat, item['domain'], response_data, item['sub_message_hash'])
             else:
@@ -171,7 +171,7 @@ class ChatProcessorMessage:
             ai_response=response_ia,
             hash=unique_hash_mensage
         )
-        self.memory.save_memory_to_file(id_chat)
+        #self.memory.save_memory_to_file(id_chat)
         return response_ia if response_ia else "Desculpe, não consegui gerar uma resposta no momento."
     
     def save_response_to_database(self,id_chat, message, response, classify):
@@ -263,6 +263,6 @@ class ChatProcessorOpen:
         
         if response['context_message']:
             self.feed_memory_with_history(response)
-        self.memory.save_memory_to_file(id_chat)
+        #self.memory.save_memory_to_file(id_chat)
         return response
     

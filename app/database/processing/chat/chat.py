@@ -21,10 +21,10 @@ def search_or_open_chat(data):
             return {"error": 'Erro na criação do chat'}
         
         # Busca uma mensagem inicial
-        response_handler = ResponseHandler()
-        resposta_greeting = response_handler.get_response("Olá", "greeting")
+        #response_handler = ResponseHandler()
+        #resposta_greeting = response_handler.get_response("Olá", "greeting")
         
-        create_new_chat_detail(result['id_chat'], 'IA', resposta_greeting)
+        #create_new_chat_detail(result['id_chat'], 'IA', resposta_greeting)
         
         id_chat = result['id_chat'][0]
 
@@ -231,7 +231,7 @@ def search_querys_chat(nome, format):
             FROM VSCONSULTACHAT
             WHERE NOME LIKE :nome
         """)
-        param = {'nome': f'%{nome}%'}  # Adiciona os curingas de LIKE
+        param = {'nome': f'%{nome}'}  # Adiciona os curingas de LIKE
     elif format == 'equal':
         query = text("""
             SELECT SQL

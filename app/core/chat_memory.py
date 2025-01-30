@@ -121,14 +121,33 @@ class ChatMemory:
         memory["pending_contexts"].append(context)
 
     def prepare_invoke_input(
-        self,
-        id_chat: str,
-        include_analysis: bool = True,
-        include_pending: bool = True
-    ) -> List[HumanMessage|AIMessage|SystemMessage]:
+            self,
+            id_chat: str,
+            include_analysis: bool = True,
+            include_pending: bool = True
+        ) -> List[HumanMessage|AIMessage|SystemMessage]:
         """Prepara o contexto completo para o invoke."""
+
         memory = self.get_memory(id_chat)
         messages = memory["chat_memory"].copy()
+
+        # Adiciona regras de comportamento da IA
+        predefined_rules = [
+            "Perfil: Você é um assistente chamado EVO. Foi criado paara auxiliar na busca de informações, análise de cenários e auxiliar na tomada de decisão em cima dos dados do sistema Construshow,só informe isso se alguem perguntar!"
+            "1. Responda em linguagem natural."
+            "2. Sempre responda de forma clara e objetiva.",
+            "2. Caso a pergunta seja ambígua, peça mais detalhes antes de responder.",
+            "3. Evite suposições sem dados concretos.",
+            "4. Responda como se tivesse acesso direto aos dados, sem informar que os dados foram recebidos",
+            "5. Qualquer análise solicitada deve ser em cima dos dados recebidos.",
+            "6. Responda somente em português - Brasil",
+            '7. Mantenha as respostas no contexto da pergunta e o conjunto de dados, caso seja fora de contexto informe ao usuário solicitando uma pergunta mais específica'
+        ]
+
+        messages.insert(0, SystemMessage(
+            content="REGRAS DE COMPORTAMENTO: " + " | ".join(predefined_rules),
+            additional_kwargs={"type": "rules"}
+        ))
 
         # Adiciona dados de análise como SystemMessage
         if include_analysis:

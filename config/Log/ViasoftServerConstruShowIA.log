@@ -1,306 +1,90 @@
-2025-01-23 17:35:50,197 - root - DEBUG - Inicio do processamento da equisição da mensagem
-2025-01-23 17:35:50,198 - root - DEBUG - Identifica a entidade principal da pergunta
-2025-01-23 17:35:50,205 - root - DEBUG - Realiza a divisão em submenssagens
-2025-01-23 17:35:50,206 - root - DEBUG - Identifica as entidades de cada submenssagem e realiza a análise dos seus relacionamentos
-2025-01-23 17:35:50,312 - root - DEBUG - Classifica o domínio das mensagens -> contextual_messages: [{'success': True, 'path_rn': '/customer/buy', 'entitie': '', 'missing': [], 'short_message': 'Qual é o histórico de compras do cliente', 'string_intention': np.str_('search'), 'sub_message_hash': '444b8d6a7e12db8ddc5bbfc8a8aeeb87484ee200c5e06bf40ad5a94e288a420f'}], conf: {'lowercase': 'True', 'remove_accents_and_special_characters': 'True', 'remove_punctuation': 'True'}
-2025-01-23 17:35:51,276 - root - DEBUG - Inicia a geração da resposta
-2025-01-23 17:35:58,522 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'Qual é o histórico de compras do cliente'}, {'role': 'system', 'content': 'DADOS DE ANALISE[search_customer_buy_history]: \n\n#DADOS PARA ANÁLISE - HISTÓRICO DE COMPRAS DO CLIENTE:\n##CONTEXTO DOS DADOS:\nEsses dados retornam informações a respeito do histórico de compras do cliente\n\n##DADOS:\n###Valor total de compras últimos 12 meses: R$17072.76\n###Quantidade total de compras últimos 12 meses: 70\n###Frequência das compras (Quantidade):\n |   01/2024 |\n|----------:|\n|        70 |\n###Top 10 Principais itens comprados pelo cliente:\n |                                                                                  |   0 |\n|:---------------------------------------------------------------------------------|----:|\n| (\'4957\', \'SUPREMO CIMENTO CPIV 50KG\')                                            |  11 |\n| (\'621\', \'TODAS OBRAS CIMENTO VOTORAN CP-IV 50KG\')                                |   7 |\n| (\'1003390\', \'TEE PVC ESGOTO 100MM KRONA\')                                        |   7 |\n| (\'1003316\', \'JOELHO PVC SOLDAVEL 90GR 25MM KRONA\')                               |   5 |\n| (\'949\', \'TIJOLO 8 FUROS 09X19X19 (A PECA) CERAMICA 90\')                          |   5 |\n| (\'1012560\', \'IMPORTADO BARRA DE FERRO CA50 08,0MM 5/16 C/12MTS (4,740KG)\')       |   4 |\n| (\'1012919\', \'LONA PRETA 4MX110M 20KG (METRO) MAXILONA\')                          |   4 |\n| (\'1013090\', \'RETIRA - ARGAMASSA AC III 20KG (CINZA) VOTORANTIM\')                 |   4 |\n| (\'1012101\', \'DISCO CORTE ACO/ INOX 4.1/2" X 3/64" X 7/8" (115 X 1,0 X 22,23MM)\') |   4 |\n| (\'1009211\', \'SILICONE ACETICO 250G INCOLOR\')                                     |   4 |\n###Principais departamentos comprados pelo cliente:\n | departamento   |   proportion |\n|:---------------|-------------:|\n| 3 - DEPTO PGN  |          100 |\n###Principais secaos comprados pelo cliente:\n | secao                |   proportion |\n|:---------------------|-------------:|\n| 3 - HIDRAULICA E GAS |     33.7079  |\n| 18 - MATERIAL BASICO |     29.588   |\n| 2 - PINTURA          |     11.6105  |\n| 9 - FERRAMENTAS      |     11.236   |\n| 5 - ELETRICA         |      6.74157 |\n###Principais grupos comprados pelo cliente:\n | grupo                           |   proportion |\n|:--------------------------------|-------------:|\n| 68 - CONEXOES                   |     24.3446  |\n| 144 - VERGALHOES/ ARAMES        |      7.1161  |\n| 186 - CIMENTOS                  |      6.74157 |\n| 40 - IMPERMEABILIZANTES         |      6.36704 |\n| 107 - ACESSORIOS DE FERRAMENTAS |      6.36704 |\n###Principais subgrupos comprados pelo cliente:\n | subgrupo                 |   proportion |\n|:-------------------------|-------------:|\n| 303 - CONEXOES DE ESGOTO |     12.7341  |\n| 54 - CIMENTO             |      6.74157 |\n| 301 - CONEXOES SOLDAVEIS |      5.99251 |\n| 55 - ARGAMASSAS          |      4.86891 |\n| 56 - AREIA               |      4.49438 |\n###Maior compra últimos 12 meses:\n |              | 51                                                          |\n|:-------------|:------------------------------------------------------------|\n| estab        | 1000                                                        |\n| razaosoc     | TANAKO MATERIAIS PARA CONSTRUCAO LTDA                       |\n| emissao      | 2023-12-29 00:00:00                                         |\n| entradasaida | 2023-12-29 00:00:00                                         |\n| especie      | NF                                                          |\n| idnota       | 598411                                                      |\n| numdoc       | 598411                                                      |\n| serie        | PDV                                                         |\n| situacao     | Conferida                                                   |\n| motivodev    | SEM MOTIVO INFORMADO                                        |\n| pagamento    | Duplicata a Receber CARTEIRA Valor:              R$4.376,80 |\n| tipooper     | Venda                                                       |\n| total        | 4376.8                                                      |\n###Menor compra últimos 12 meses:\n |              | 54                                                          |\n|:-------------|:------------------------------------------------------------|\n| estab        | 1000                                                        |\n| razaosoc     | TANAKO MATERIAIS PARA CONSTRUCAO LTDA                       |\n| emissao      | 2024-01-02 00:00:00                                         |\n| entradasaida | 2024-01-02 00:00:00                                         |\n| especie      | NF                                                          |\n| idnota       | 598774                                                      |\n| numdoc       | 598774                                                      |\n| serie        | PDV                                                         |\n| situacao     | Conferida                                                   |\n| motivodev    | SEM MOTIVO INFORMADO                                        |\n| pagamento    | Duplicata a Receber CARTEIRA Valor:                   R$,89 |\n| tipooper     | Venda                                                       |\n| total        | 0.888                                                       |\n###Dia da semana que o cliente mais compra:\n Terça-feira\n###Últimas 10 compras:\n |    |   estab | razaosoc                              | emissao             | entradasaida        | especie   |   idnota |   numdoc | serie   | situacao   | motivodev            | pagamento                                                   | tipooper   |   total |\n|---:|--------:|:--------------------------------------|:--------------------|:--------------------|:----------|---------:|---------:|:--------|:-----------|:---------------------|:------------------------------------------------------------|:-----------|--------:|\n| 69 |    1000 | TANAKO MATERIAIS PARA CONSTRUCAO LTDA | 2024-01-24 00:00:00 | 2024-01-24 00:00:00 | NF        |   602946 |   602946 | PDV     | Conferida  | SEM MOTIVO INFORMADO | Duplicata a Receber CARTEIRA Valor:                R$118,68 | Venda      | 118.68  |\n| 68 |    1000 | TANAKO MATERIAIS PARA CONSTRUCAO LTDA | 2024-01-22 00:00:00 | 2024-01-22 00:00:00 | NF        |   602618 |   602618 | PDV     | Conferida  | SEM MOTIVO INFORMADO | Duplicata a Receber CARTEIRA Valor:                 R$56,56 | Venda      |  56.552 |\n| 67 |    1000 | TANAKO MATERIAIS PARA CONSTRUCAO LTDA | 2024-01-19 00:00:00 | 2024-01-19 00:00:00 | NF        |   602267 |   602267 | PDV     | Conferida  | SEM MOTIVO INFORMADO | Duplicata a Receber CARTEIRA Valor:                 R$22,46 | Venda      |  22.456 |\n| 66 |    1000 | TANAKO MATERIAIS PARA CONSTRUCAO LTDA | 2024-01-18 00:00:00 | 2024-01-18 00:00:00 | NF        |   602041 |   602041 | PDV     | Conferida  | SEM MOTIVO INFORMADO | Duplicata a Receber CARTEIRA Valor:                 R$31,06 | Venda      |  31.056 |\n| 65 |    1000 | TANAKO MATERIAIS PARA CONSTRUCAO LTDA | 2024-01-16 00:00:00 | 2024-01-16 00:00:00 | NF        |   601423 |   601423 | PDV     | Conferida  | SEM MOTIVO INFORMADO | Duplicata a Receber CARTEIRA Valor:                R$282,32 | Venda      | 282.316 |\n| 64 |    1000 | TANAKO MATERIAIS PARA CONSTRUCAO LTDA | 2024-01-16 00:00:00 | 2024-01-16 00:00:00 | NF        |   601417 |   601417 | PDV     | Conferida  | SEM MOTIVO INFORMADO | Duplicata a Receber CARTEIRA Valor:                R$339,12 | Venda      | 339.12  |\n| 63 |    1000 | TANAKO MATERIAIS PARA CONSTRUCAO LTDA | 2024-01-15 00:00:00 | 2024-01-15 00:00:00 | NF        |   601193 |   601193 | PDV     | Conferida  | SEM MOTIVO INFORMADO | Duplicata a Receber CARTEIRA Valor:                 R$21,98 | Venda      |  21.984 |\n| 62 |    1000 | TANAKO MATERIAIS PARA CONSTRUCAO LTDA | 2024-01-11 00:00:00 | 2024-01-11 00:00:00 | NF        |   600615 |   600615 | PDV     | Conferida  | SEM MOTIVO INFORMADO | Duplicata a Receber CARTEIRA Valor:                 R$97,91 | Venda      |  97.912 |\n| 61 |    1000 | TANAKO MATERIAIS PARA CONSTRUCAO LTDA | 2024-01-09 00:00:00 | 2024-01-09 00:00:00 | NF        |   600181 |   600181 | PDV     | Conferida  | SEM MOTIVO INFORMADO | Duplicata a Receber CARTEIRA Valor:                 R$14,84 | Venda      |  14.84  |\n| 60 |    1000 | TANAKO MATERIAIS PARA CONSTRUCAO LTDA | 2024-01-09 00:00:00 | 2024-01-09 00:00:00 | NF        |   600177 |   600177 | PDV     | Conferida  | SEM MOTIVO INFORMADO | Duplicata a Receber CARTEIRA Valor:                 R$52,50 | Venda      |  52.496 |'}], 'model': 'llama3-8b-8192', 'max_tokens': 4000, 'n': 1, 'stop': None, 'stream': False, 'temperature': 0.7}}
-2025-01-23 17:35:58,552 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
-2025-01-23 17:35:58,553 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=None socket_options=None
-2025-01-23 17:35:58,571 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000137C7C63B30>
-2025-01-23 17:35:58,572 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x00000137C7C9F150> server_hostname='api.groq.com' timeout=None
-2025-01-23 17:35:58,618 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000137C7C0C560>
-2025-01-23 17:35:58,618 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
-2025-01-23 17:35:58,620 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-01-23 17:35:58,621 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
-2025-01-23 17:35:58,622 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-01-23 17:35:58,623 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
-2025-01-23 17:36:00,095 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 23 Jan 2025 20:36:00 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'CF-Ray', b'906a92c32af1df4e-GIG'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Vary', b'Origin, Accept-Encoding'), (b'Via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'x-groq-region', b'us-west-1'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'20000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'17852'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'6.444s'), (b'x-request-id', b'req_01jjae1xpkfdg8cbkjnwqg8x3s'), (b'Set-Cookie', b'__cf_bm=Hri105P9OfdPVYGpUWL6z6E54pPL27OMwNc5ttfubT4-1737664560-1.0.1.1-MhSb1ybsSz5PGYgxfa32teP5JXJ1d9Dx44kM4pGijLDqwO3niqJwLpeMRu2AOjc6PDVqLn5kLd5Y5Az7cJE.nA; path=/; expires=Thu, 23-Jan-25 21:06:00 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'Content-Encoding', b'gzip')])
-2025-01-23 17:36:00,098 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
-2025-01-23 17:36:00,099 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
-2025-01-23 17:36:00,099 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-01-23 17:36:00,101 - httpcore.http11 - DEBUG - response_closed.started
-2025-01-23 17:36:00,101 - httpcore.http11 - DEBUG - response_closed.complete
-2025-01-23 17:36:00,101 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Thu, 23 Jan 2025 20:36:00 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cf-ray': '906a92c32af1df4e-GIG', 'cf-cache-status': 'DYNAMIC', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin, Accept-Encoding', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'x-groq-region': 'us-west-1', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '20000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '17852', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '6.444s', 'x-request-id': 'req_01jjae1xpkfdg8cbkjnwqg8x3s', 'set-cookie': '__cf_bm=Hri105P9OfdPVYGpUWL6z6E54pPL27OMwNc5ttfubT4-1737664560-1.0.1.1-MhSb1ybsSz5PGYgxfa32teP5JXJ1d9Dx44kM4pGijLDqwO3niqJwLpeMRu2AOjc6PDVqLn5kLd5Y5Az7cJE.nA; path=/; expires=Thu, 23-Jan-25 21:06:00 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'content-encoding': 'gzip'})
-2025-01-23 17:36:00,117 - root - DEBUG - Salva a mensagem da IA no banco de dados
-2025-01-23 17:36:00,130 - root - DEBUG - Requisição finalizada
-2025-01-23 17:42:52,202 - root - WARNING - Interrupção manual recebida. Encerrando serviço...
-2025-01-23 17:42:52,203 - root - DEBUG - Encerrando o serviço...
-2025-01-23 17:42:52,204 - root - DEBUG - Aguardando o término da thread do servidor...
-2025-01-23 17:42:57,219 - root - DEBUG - Encerrando o serviço...
-2025-01-23 17:42:57,220 - root - INFO - Serviço encerrado com sucesso.
-2025-01-23 17:42:57,371 - httpcore.connection - DEBUG - close.started
-2025-01-23 17:42:57,372 - httpcore.connection - DEBUG - close.complete
-2025-01-23 18:19:40,608 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
-2025-01-23 18:19:42,610 - root - DEBUG - Executando como serviço via NSSM.
-2025-01-23 18:19:42,611 - root - DEBUG - Serviço sendo inicializado
-2025-01-23 18:19:42,611 - root - DEBUG - Iniciando a criação do app
-2025-01-23 18:19:42,612 - root - DEBUG - Servidor iniciado em uma thread separada.
-2025-01-23 18:19:42,612 - root - DEBUG - Iniciando a instância do SQLAlchemy (Database)...
-2025-01-23 18:19:42,612 - root - DEBUG - Iniciando o banco de dados com a aplicação
-2025-01-23 18:19:42,746 - root - DEBUG - Verificando a conexão com o banco de dados...
-2025-01-23 18:19:44,587 - root - DEBUG - Conexão com o banco de dados verificada com sucesso: (1,)
-2025-01-23 18:19:44,593 - waitress - INFO - Serving on http://127.0.0.1:2710
-2025-01-23 18:19:54,871 - root - DEBUG - Inicio do processamento da equisição de abertura
-2025-01-23 18:19:54,871 - root - DEBUG - Inicia criação do chat
-2025-01-23 18:19:54,880 - root - DEBUG - Inicia processo para unificar dados compartilhados e aninhar mensagens
-2025-01-23 18:19:59,036 - root - DEBUG - Inicio do processamento da equisição da mensagem
-2025-01-23 18:19:59,037 - root - DEBUG - Identifica a entidade principal da pergunta
-2025-01-23 18:19:59,045 - root - DEBUG - Realiza a divisão em submenssagens
-2025-01-23 18:19:59,045 - root - DEBUG - Identifica as entidades de cada submenssagem e realiza a análise dos seus relacionamentos
-2025-01-23 18:19:59,045 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\app\core\classify\mod\app\models\saved
-2025-01-23 18:19:59,046 - root - ERROR - Arquivo do modelo de intenções não encontrado: D:\ProjetosIA\ViasoftServerConstruShowIA\app\core\classify\mod\app\models\saved\model_predicting_intentions.joblib
-2025-01-23 18:19:59,051 - root - DEBUG - Classifica o domínio das mensagens -> contextual_messages: [{'success': True, 'path_rn': '/customer/buy', 'entitie': '', 'missing': [], 'short_message': 'Qual é o histórico de compras do cliente?', 'string_intention': None, 'sub_message_hash': '5d8455d19513a864c964866370e9aeea9c545229cb60b71a7f017b5306054af3'}], conf: {'lowercase': 'True', 'remove_accents_and_special_characters': 'True', 'remove_punctuation': 'True'}
-2025-01-23 18:19:59,052 - root - DEBUG - Inicia o For
-2025-01-23 18:19:59,053 - root - DEBUG - Inicia a classificação
-2025-01-23 18:19:59,053 - root - ERROR - Erro ao processar a requisição: unsupported operand type(s) for +: 'NoneType' and 'str'
-2025-01-23 18:20:20,109 - root - WARNING - Interrupção manual recebida. Encerrando serviço...
-2025-01-23 18:20:20,110 - root - DEBUG - Encerrando o serviço...
-2025-01-23 18:20:20,110 - root - DEBUG - Aguardando o término da thread do servidor...
-2025-01-23 18:20:25,118 - root - DEBUG - Encerrando o serviço...
-2025-01-23 18:20:25,120 - root - INFO - Serviço encerrado com sucesso.
-2025-01-24 07:44:50,156 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
-2025-01-24 07:44:52,975 - root - DEBUG - Executando como serviço via NSSM.
-2025-01-24 07:44:52,976 - root - DEBUG - Serviço sendo inicializado
-2025-01-24 07:44:52,976 - root - DEBUG - Iniciando a criação do app
-2025-01-24 07:44:52,977 - root - DEBUG - Servidor iniciado em uma thread separada.
-2025-01-24 07:44:52,977 - root - DEBUG - Iniciando a instância do SQLAlchemy (Database)...
-2025-01-24 07:44:52,977 - root - DEBUG - Iniciando o banco de dados com a aplicação
-2025-01-24 07:44:53,103 - root - DEBUG - Verificando a conexão com o banco de dados...
-2025-01-24 07:44:54,557 - root - DEBUG - Conexão com o banco de dados verificada com sucesso: (1,)
-2025-01-24 07:44:54,562 - waitress - INFO - Serving on http://127.0.0.1:2710
-2025-01-24 07:49:52,193 - root - DEBUG - Inicio do processamento da equisição da mensagem
-2025-01-24 07:49:52,193 - root - DEBUG - Identifica a entidade principal da pergunta
-2025-01-24 07:49:52,218 - root - DEBUG - Realiza a divisão em submenssagens
-2025-01-24 07:49:52,218 - root - DEBUG - Identifica as entidades de cada submenssagem e realiza a análise dos seus relacionamentos
-2025-01-24 07:49:52,225 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\app\core\classify\mod\app\models\saved
-2025-01-24 07:49:52,226 - root - ERROR - Arquivo do modelo de intenções não encontrado: D:\ProjetosIA\ViasoftServerConstruShowIA\app\core\classify\mod\app\models\saved\model_predicting_intentions.joblib
-2025-01-24 07:49:52,233 - root - DEBUG - Classifica o domínio das mensagens -> contextual_messages: [{'success': True, 'path_rn': '/customer/buy', 'entitie': '', 'missing': [], 'short_message': 'Qual é o histórico de compras do cliente?', 'string_intention': None, 'sub_message_hash': '6fe752a3f16853b327399bf7184c10a7f9d4ce5d5208bca72d231af0eaf6f812'}], conf: {'lowercase': 'True', 'remove_accents_and_special_characters': 'True', 'remove_punctuation': 'True'}
-2025-01-24 07:49:52,233 - root - DEBUG - Inicia o For
-2025-01-24 07:49:52,234 - root - DEBUG - Inicia a classificação
-2025-01-24 07:49:52,234 - root - ERROR - Erro ao processar a requisição: unsupported operand type(s) for +: 'NoneType' and 'str'
-2025-01-24 07:50:01,043 - root - WARNING - Interrupção manual recebida. Encerrando serviço...
-2025-01-24 07:50:01,044 - root - DEBUG - Encerrando o serviço...
-2025-01-24 07:50:01,044 - root - DEBUG - Aguardando o término da thread do servidor...
-2025-01-24 07:50:06,053 - root - ERROR - A thread do servidor não foi encerrada. Forçando o término do programa.
-2025-01-24 07:50:30,725 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
-2025-01-24 07:50:34,555 - root - DEBUG - Executando como serviço via NSSM.
-2025-01-24 07:50:34,555 - root - DEBUG - Serviço sendo inicializado
-2025-01-24 07:50:34,557 - root - DEBUG - Iniciando a criação do app
-2025-01-24 07:50:34,557 - root - DEBUG - Servidor iniciado em uma thread separada.
-2025-01-24 07:50:39,907 - root - DEBUG - Iniciando a instância do SQLAlchemy (Database)...
-2025-01-24 07:50:39,908 - root - DEBUG - Iniciando o banco de dados com a aplicação
-2025-01-24 07:50:39,951 - root - DEBUG - Verificando a conexão com o banco de dados...
-2025-01-24 07:50:41,333 - root - DEBUG - Conexão com o banco de dados verificada com sucesso: (1,)
-2025-01-24 07:50:41,341 - waitress - INFO - Serving on http://127.0.0.1:2710
-2025-01-24 07:51:01,362 - root - DEBUG - Inicio do processamento da equisição da mensagem
-2025-01-24 07:51:01,363 - root - DEBUG - Identifica a entidade principal da pergunta
-2025-01-24 07:51:01,392 - root - DEBUG - Realiza a divisão em submenssagens
-2025-01-24 07:51:01,394 - root - DEBUG - Identifica as entidades de cada submenssagem e realiza a análise dos seus relacionamentos
-2025-01-24 07:51:01,394 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\app\core\classify\mod\app\models\saved
-2025-01-24 07:51:01,395 - root - ERROR - Arquivo do modelo de intenções não encontrado: D:\ProjetosIA\ViasoftServerConstruShowIA\app\core\classify\mod\app\models\saved\model_predicting_intentions.joblib
-2025-01-24 07:51:01,405 - root - DEBUG - Classifica o domínio das mensagens -> contextual_messages: [{'success': True, 'path_rn': '/customer/buy', 'entitie': '', 'missing': [], 'short_message': 'Qual é o histórico de compras do cliente?', 'string_intention': None, 'sub_message_hash': '918449594283199223e93c8b60d6288c54f5ca6ddea941aa01f4c179e254db30'}], conf: {'lowercase': 'True', 'remove_accents_and_special_characters': 'True', 'remove_punctuation': 'True'}
-2025-01-24 07:51:01,406 - root - DEBUG - Inicia o For
-2025-01-24 07:51:01,406 - root - DEBUG - Inicia a classificação
-2025-01-24 07:51:01,407 - root - ERROR - Erro ao processar a requisição: unsupported operand type(s) for +: 'NoneType' and 'str'
-2025-01-24 07:52:14,500 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
-2025-01-24 07:52:18,024 - root - DEBUG - Executando como serviço via NSSM.
-2025-01-24 07:52:18,025 - root - DEBUG - Serviço sendo inicializado
-2025-01-24 07:52:18,027 - root - DEBUG - Iniciando a criação do app
-2025-01-24 07:52:18,027 - root - DEBUG - Servidor iniciado em uma thread separada.
-2025-01-24 07:52:18,028 - root - DEBUG - Iniciando a instância do SQLAlchemy (Database)...
-2025-01-24 07:52:18,028 - root - DEBUG - Iniciando o banco de dados com a aplicação
-2025-01-24 07:52:18,055 - root - DEBUG - Verificando a conexão com o banco de dados...
-2025-01-24 07:52:19,447 - root - DEBUG - Conexão com o banco de dados verificada com sucesso: (1,)
-2025-01-24 07:52:19,455 - waitress - INFO - Serving on http://127.0.0.1:2710
-2025-01-24 07:53:10,027 - root - DEBUG - Inicio do processamento da equisição da mensagem
-2025-01-24 07:53:10,027 - root - DEBUG - Identifica a entidade principal da pergunta
-2025-01-24 07:53:10,059 - root - DEBUG - Realiza a divisão em submenssagens
-2025-01-24 07:53:10,061 - root - DEBUG - Identifica as entidades de cada submenssagem e realiza a análise dos seus relacionamentos
-2025-01-24 07:53:10,061 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\app\core\classify\mod\app\models\saved
-2025-01-24 07:53:10,062 - root - ERROR - Arquivo do modelo de intenções não encontrado: D:\ProjetosIA\ViasoftServerConstruShowIA\app\core\classify\mod\app\models\saved\model_predicting_intentions.joblib
-2025-01-24 07:53:10,071 - root - DEBUG - Classifica o domínio das mensagens -> contextual_messages: [{'success': True, 'path_rn': '/customer/buy', 'entitie': '', 'missing': [], 'short_message': 'Qual é o histórico de compras do cliente?', 'string_intention': None, 'sub_message_hash': 'a37b5555aa0c3fe2f12a787608ed7b8c80ba5a182e08a9bfe569137d209895cf'}], conf: {'lowercase': 'True', 'remove_accents_and_special_characters': 'True', 'remove_punctuation': 'True'}
-2025-01-24 07:53:10,072 - root - DEBUG - Inicia o For
-2025-01-24 07:53:16,599 - root - DEBUG - Inicia a classificação
-2025-01-24 07:53:21,860 - root - ERROR - Erro ao processar a requisição: unsupported operand type(s) for +: 'NoneType' and 'str'
-2025-01-24 07:54:18,277 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
-2025-01-24 07:54:21,809 - root - DEBUG - Executando como serviço via NSSM.
-2025-01-24 07:54:21,810 - root - DEBUG - Serviço sendo inicializado
-2025-01-24 07:54:21,811 - root - DEBUG - Iniciando a criação do app
-2025-01-24 07:54:21,811 - root - DEBUG - Servidor iniciado em uma thread separada.
-2025-01-24 07:54:21,812 - root - DEBUG - Iniciando a instância do SQLAlchemy (Database)...
-2025-01-24 07:54:21,813 - root - DEBUG - Iniciando o banco de dados com a aplicação
-2025-01-24 07:54:21,838 - root - DEBUG - Verificando a conexão com o banco de dados...
-2025-01-24 07:54:23,257 - root - DEBUG - Conexão com o banco de dados verificada com sucesso: (1,)
-2025-01-24 07:54:23,264 - waitress - INFO - Serving on http://127.0.0.1:2710
-2025-01-24 07:54:46,354 - root - DEBUG - Inicio do processamento da equisição da mensagem
-2025-01-24 07:54:46,355 - root - DEBUG - Identifica a entidade principal da pergunta
-2025-01-24 07:54:46,385 - root - DEBUG - Realiza a divisão em submenssagens
-2025-01-24 07:54:46,386 - root - DEBUG - Identifica as entidades de cada submenssagem e realiza a análise dos seus relacionamentos
-2025-01-24 07:54:46,387 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\app\core\classify\mod\app\models\saved
-2025-01-24 07:54:46,387 - root - ERROR - Arquivo do modelo de intenções não encontrado: D:\ProjetosIA\ViasoftServerConstruShowIA\app\core\classify\mod\app\models\saved\model_predicting_intentions.joblib
-2025-01-24 07:54:46,397 - root - DEBUG - Classifica o domínio das mensagens -> contextual_messages: [{'success': True, 'path_rn': '/customer/buy', 'entitie': '', 'missing': [], 'short_message': 'Qual é o histórico de compras do cliente?', 'string_intention': None, 'sub_message_hash': 'ec009468e9efbb6e6e3ed6c6d81f967f5846a0d5983349601518873f0ce6d37c'}], conf: {'lowercase': 'True', 'remove_accents_and_special_characters': 'True', 'remove_punctuation': 'True'}
-2025-01-24 07:54:46,398 - root - DEBUG - Inicia o For
-2025-01-24 07:54:49,204 - root - DEBUG - Inicia a classificação
-2025-01-24 07:54:49,915 - root - DEBUG - Carregando modelo e componentes
-2025-01-24 07:55:46,426 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
-2025-01-24 07:55:50,205 - root - DEBUG - Executando como serviço via NSSM.
-2025-01-24 07:55:50,205 - root - DEBUG - Serviço sendo inicializado
-2025-01-24 07:55:50,207 - root - DEBUG - Iniciando a criação do app
-2025-01-24 07:55:50,207 - root - DEBUG - Servidor iniciado em uma thread separada.
-2025-01-24 07:55:50,208 - root - DEBUG - Iniciando a instância do SQLAlchemy (Database)...
-2025-01-24 07:55:50,209 - root - DEBUG - Iniciando o banco de dados com a aplicação
-2025-01-24 07:55:50,233 - root - DEBUG - Verificando a conexão com o banco de dados...
-2025-01-24 07:55:51,637 - root - DEBUG - Conexão com o banco de dados verificada com sucesso: (1,)
-2025-01-24 07:55:51,643 - waitress - INFO - Serving on http://127.0.0.1:2710
-2025-01-24 07:56:52,154 - root - DEBUG - Inicio do processamento da equisição da mensagem
-2025-01-24 07:56:52,154 - root - DEBUG - Identifica a entidade principal da pergunta
-2025-01-24 07:56:52,184 - root - DEBUG - Realiza a divisão em submenssagens
-2025-01-24 07:56:52,186 - root - DEBUG - Identifica as entidades de cada submenssagem e realiza a análise dos seus relacionamentos
-2025-01-24 07:56:52,186 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\app\core\classify\mod\app\models\saved
-2025-01-24 07:56:52,187 - root - ERROR - Arquivo do modelo de intenções não encontrado: D:\ProjetosIA\ViasoftServerConstruShowIA\app\core\classify\mod\app\models\saved\model_predicting_intentions.joblib
-2025-01-24 07:56:52,197 - root - DEBUG - Classifica o domínio das mensagens -> contextual_messages: [{'success': True, 'path_rn': '/customer/buy', 'entitie': '', 'missing': [], 'short_message': 'Qual é o histórico de compras do cliente?', 'string_intention': None, 'sub_message_hash': '3a28b3f1e5a57a08f3663a13808fba8badc1b1c9d12451f330070361ddba77a9'}], conf: {'lowercase': 'True', 'remove_accents_and_special_characters': 'True', 'remove_punctuation': 'True'}
-2025-01-24 07:56:52,197 - root - DEBUG - Inicia o For
-2025-01-24 07:58:06,117 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
-2025-01-24 07:58:09,779 - root - DEBUG - Executando como serviço via NSSM.
-2025-01-24 07:58:09,779 - root - DEBUG - Serviço sendo inicializado
-2025-01-24 07:58:09,781 - root - DEBUG - Iniciando a criação do app
-2025-01-24 07:58:09,782 - root - DEBUG - Servidor iniciado em uma thread separada.
-2025-01-24 07:58:09,782 - root - DEBUG - Iniciando a instância do SQLAlchemy (Database)...
-2025-01-24 07:58:09,783 - root - DEBUG - Iniciando o banco de dados com a aplicação
-2025-01-24 07:58:09,808 - root - DEBUG - Verificando a conexão com o banco de dados...
-2025-01-24 07:58:11,162 - root - DEBUG - Conexão com o banco de dados verificada com sucesso: (1,)
-2025-01-24 07:58:11,168 - waitress - INFO - Serving on http://127.0.0.1:2710
-2025-01-24 07:58:15,819 - root - DEBUG - Inicio do processamento da equisição da mensagem
-2025-01-24 07:58:15,820 - root - DEBUG - Identifica a entidade principal da pergunta
-2025-01-24 07:58:15,846 - root - DEBUG - Realiza a divisão em submenssagens
-2025-01-24 07:58:15,848 - root - DEBUG - Identifica as entidades de cada submenssagem e realiza a análise dos seus relacionamentos
-2025-01-24 08:00:21,997 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
-2025-01-24 08:00:26,226 - root - DEBUG - Executando como serviço via NSSM.
-2025-01-24 08:00:26,226 - root - DEBUG - Serviço sendo inicializado
-2025-01-24 08:00:26,228 - root - DEBUG - Iniciando a criação do app
-2025-01-24 08:00:26,228 - root - DEBUG - Servidor iniciado em uma thread separada.
-2025-01-24 08:00:26,228 - root - DEBUG - Iniciando a instância do SQLAlchemy (Database)...
-2025-01-24 08:00:26,229 - root - DEBUG - Iniciando o banco de dados com a aplicação
-2025-01-24 08:00:26,255 - root - DEBUG - Verificando a conexão com o banco de dados...
-2025-01-24 08:00:27,661 - root - DEBUG - Conexão com o banco de dados verificada com sucesso: (1,)
-2025-01-24 08:00:27,668 - waitress - INFO - Serving on http://127.0.0.1:2710
-2025-01-24 08:00:53,101 - root - DEBUG - Inicio do processamento da equisição da mensagem
-2025-01-24 08:00:53,102 - root - DEBUG - Identifica a entidade principal da pergunta
-2025-01-24 08:00:53,131 - root - DEBUG - Realiza a divisão em submenssagens
-2025-01-24 08:00:53,133 - root - DEBUG - Identifica as entidades de cada submenssagem e realiza a análise dos seus relacionamentos
-2025-01-24 08:01:07,953 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
-2025-01-24 08:01:41,946 - root - DEBUG - Classifica o domínio das mensagens -> contextual_messages: [{'success': True, 'path_rn': '/customer/buy', 'entitie': '', 'missing': [], 'short_message': 'Qual é o histórico de compras do cliente?', 'string_intention': np.str_('search'), 'sub_message_hash': 'ffbb78e15da1a0d9151199689b7901694cbf2cdf48823d14a7018f94d22b28a3'}], conf: {'lowercase': 'True', 'remove_accents_and_special_characters': 'True', 'remove_punctuation': 'True'}
-2025-01-24 08:01:42,306 - root - DEBUG - Inicia o For
-2025-01-24 08:01:43,881 - root - DEBUG - Inicia a classificação
-2025-01-24 08:01:44,340 - root - DEBUG - Carregando modelo e componentes
-2025-01-24 08:01:58,090 - root - DEBUG - Domínio convertido: search_customer_buy
-2025-01-24 08:02:02,562 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
-2025-01-24 08:02:35,066 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\search/customer/buy\search_customer_buy
-2025-01-24 08:02:42,980 - root - DEBUG - Carregando modelo: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\search/customer/buy\search_customer_buy\search_customer_buy_best_model.keras
-2025-01-24 08:02:47,428 - root - ERROR - Arquivo do modelo não encontrado: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\search/customer/buy\search_customer_buy\search_customer_buy_best_model.keras
-2025-01-24 08:03:26,515 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
-2025-01-24 08:03:30,262 - root - DEBUG - Executando como serviço via NSSM.
-2025-01-24 08:03:30,263 - root - DEBUG - Serviço sendo inicializado
-2025-01-24 08:03:30,265 - root - DEBUG - Iniciando a criação do app
-2025-01-24 08:03:30,266 - root - DEBUG - Servidor iniciado em uma thread separada.
-2025-01-24 08:03:30,267 - root - DEBUG - Iniciando a instância do SQLAlchemy (Database)...
-2025-01-24 08:03:30,268 - root - DEBUG - Iniciando o banco de dados com a aplicação
-2025-01-24 08:03:30,301 - root - DEBUG - Verificando a conexão com o banco de dados...
-2025-01-24 08:03:31,706 - root - DEBUG - Conexão com o banco de dados verificada com sucesso: (1,)
-2025-01-24 08:03:31,714 - waitress - INFO - Serving on http://127.0.0.1:2710
-2025-01-24 08:05:39,431 - root - DEBUG - Inicio do processamento da equisição da mensagem
-2025-01-24 08:05:39,431 - root - DEBUG - Identifica a entidade principal da pergunta
-2025-01-24 08:05:39,465 - root - DEBUG - Realiza a divisão em submenssagens
-2025-01-24 08:05:39,466 - root - DEBUG - Identifica as entidades de cada submenssagem e realiza a análise dos seus relacionamentos
-2025-01-24 08:05:46,218 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
-2025-01-24 08:06:20,315 - root - DEBUG - Classifica o domínio das mensagens -> contextual_messages: [{'success': True, 'path_rn': '/customer/buy', 'entitie': '', 'missing': [], 'short_message': 'Qual é o histórico de compras do cliente?', 'string_intention': np.str_('search'), 'sub_message_hash': '57d84c99e618001ef8972848c74c0df154bfe9d78b9ca68ffe25d82326ca2671'}], conf: {'lowercase': 'True', 'remove_accents_and_special_characters': 'True', 'remove_punctuation': 'True'}
-2025-01-24 08:06:22,300 - root - DEBUG - Inicia o For
-2025-01-24 08:06:27,154 - root - DEBUG - Inicia a classificação
-2025-01-24 08:06:28,438 - root - DEBUG - Carregando modelo e componentes
-2025-01-24 08:08:20,600 - root - DEBUG - Domínio convertido: search_customer_buy
-2025-01-24 08:08:33,205 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
-2025-01-24 08:08:53,612 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\search/customer/buy\search_customer_buy
-2025-01-24 08:11:16,985 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
-2025-01-24 08:11:20,987 - root - DEBUG - Executando como serviço via NSSM.
-2025-01-24 08:11:20,988 - root - DEBUG - Serviço sendo inicializado
-2025-01-24 08:11:20,990 - root - DEBUG - Iniciando a criação do app
-2025-01-24 08:11:20,990 - root - DEBUG - Servidor iniciado em uma thread separada.
-2025-01-24 08:11:20,990 - root - DEBUG - Iniciando a instância do SQLAlchemy (Database)...
-2025-01-24 08:11:20,991 - root - DEBUG - Iniciando o banco de dados com a aplicação
-2025-01-24 08:11:21,018 - root - DEBUG - Verificando a conexão com o banco de dados...
-2025-01-24 08:11:22,470 - root - DEBUG - Conexão com o banco de dados verificada com sucesso: (1,)
-2025-01-24 08:11:22,477 - waitress - INFO - Serving on http://127.0.0.1:2710
-2025-01-24 08:21:46,701 - root - DEBUG - Inicio do processamento da equisição da mensagem
-2025-01-24 08:21:46,702 - root - DEBUG - Identifica a entidade principal da pergunta
-2025-01-24 08:21:46,732 - root - DEBUG - Realiza a divisão em submenssagens
-2025-01-24 08:21:46,734 - root - DEBUG - Identifica as entidades de cada submenssagem e realiza a análise dos seus relacionamentos
-2025-01-24 08:21:51,500 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
-2025-01-24 08:21:55,700 - root - DEBUG - Classifica o domínio das mensagens -> contextual_messages: [{'success': True, 'path_rn': '/customer/buy', 'entitie': '', 'missing': [], 'short_message': 'Qual é o histórico de compras do cliente?', 'string_intention': np.str_('search'), 'sub_message_hash': 'c5a92562424a7078036e99636d1a51104cd7d084cac44bd606b573886655f068'}], conf: {'lowercase': 'True', 'remove_accents_and_special_characters': 'True', 'remove_punctuation': 'True'}
-2025-01-24 08:21:56,036 - root - DEBUG - Inicia o For
-2025-01-24 08:21:57,248 - root - DEBUG - Inicia a classificação
-2025-01-24 08:21:57,531 - root - DEBUG - Carregando modelo e componentes
-2025-01-24 08:22:06,159 - root - DEBUG - Domínio convertido: search_customer_buy
-2025-01-24 08:22:08,284 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
-2025-01-24 08:22:16,452 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\search\customer\buy\search_customer_buy
-2025-01-24 08:22:23,685 - root - DEBUG - Carregando modelo: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\search\customer\buy\search_customer_buy\search_customer_buy_best_model.keras
-2025-01-24 08:24:32,914 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
-2025-01-24 08:24:38,758 - root - DEBUG - Executando como serviço via NSSM.
-2025-01-24 08:24:38,758 - root - DEBUG - Serviço sendo inicializado
-2025-01-24 08:24:38,761 - root - DEBUG - Iniciando a criação do app
-2025-01-24 08:24:38,761 - root - DEBUG - Servidor iniciado em uma thread separada.
-2025-01-24 08:24:38,761 - root - DEBUG - Iniciando a instância do SQLAlchemy (Database)...
-2025-01-24 08:24:38,762 - root - DEBUG - Iniciando o banco de dados com a aplicação
-2025-01-24 08:24:38,805 - root - DEBUG - Verificando a conexão com o banco de dados...
-2025-01-24 08:24:40,624 - root - DEBUG - Conexão com o banco de dados verificada com sucesso: (1,)
-2025-01-24 08:24:40,629 - waitress - INFO - Serving on http://127.0.0.1:2710
-2025-01-24 08:28:07,732 - root - DEBUG - Inicio do processamento da equisição da mensagem
-2025-01-24 08:28:07,732 - root - DEBUG - Identifica a entidade principal da pergunta
-2025-01-24 08:28:07,762 - root - DEBUG - Realiza a divisão em submenssagens
-2025-01-24 08:28:07,763 - root - DEBUG - Identifica as entidades de cada submenssagem e realiza a análise dos seus relacionamentos
-2025-01-24 08:28:10,754 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
-2025-01-24 08:28:14,633 - root - DEBUG - Classifica o domínio das mensagens -> contextual_messages: [{'success': True, 'path_rn': '/customer/buy', 'entitie': '', 'missing': [], 'short_message': 'Qual é o histórico de compras do cliente?', 'string_intention': np.str_('search'), 'sub_message_hash': 'fa4c875237281334c4b4ce18a1d9d92cd0869bb6f464e5b633e32b341f21b987'}], conf: {'lowercase': 'True', 'remove_accents_and_special_characters': 'True', 'remove_punctuation': 'True'}
-2025-01-24 08:28:14,849 - root - DEBUG - Inicia o For
-2025-01-24 08:28:15,822 - root - DEBUG - Inicia a classificação
-2025-01-24 08:28:16,007 - root - DEBUG - Carregando modelo e componentes
-2025-01-24 08:28:17,235 - root - DEBUG - Domínio convertido: search_customer_buy
-2025-01-24 08:28:18,368 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved
-2025-01-24 08:28:19,535 - root - DEBUG - Caminho base: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\search\customer\buy
-2025-01-24 08:28:20,038 - root - DEBUG - Carregando modelo: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\search\customer\buy\search_customer_buy_best_model.keras
-2025-01-24 08:28:22,127 - root - DEBUG - Modelo carregado com sucesso.
-2025-01-24 08:28:24,142 - root - DEBUG - Carregando tokenizer: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\search\customer\buy\search_customer_buy_tokenizer.pkl
-2025-01-24 08:28:25,607 - root - DEBUG - Tokenizer carregado com sucesso.
-2025-01-24 08:28:26,231 - root - DEBUG - Carregando MultiLabelBinarizer: D:\ProjetosIA\ViasoftServerConstruShowIA\mod\app\models\saved\search\customer\buy\search_customer_buy_mlb.pkl
-2025-01-24 08:28:27,680 - root - DEBUG - MultiLabelBinarizer carregado com sucesso.
-2025-01-24 08:28:29,167 - root - DEBUG - Modelo carregado corretamente
-2025-01-24 08:28:32,142 - root - DEBUG - Tokenizer carregado corretamente
-2025-01-24 08:28:33,054 - root - DEBUG - MultiLabelBinarizer carregado corretamente
-2025-01-24 08:28:34,280 - root - DEBUG - Iniciando a predição
-2025-01-24 08:28:44,773 - root - DEBUG - Inicia a geração da resposta
-2025-01-24 08:28:52,557 - groq._base_client - DEBUG - Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'Qual é o histórico de compras do cliente?'}, {'role': 'system', 'content': 'DADOS DE ANALISE[search_customer_buy_history]: \n\n#DADOS PARA ANÁLISE - HISTÓRICO DE COMPRAS DO CLIENTE:\n##CONTEXTO DOS DADOS:\nEsses dados retornam informações a respeito do histórico de compras do cliente\n\n##DADOS:\n###Valor total de compras últimos 12 meses: R$17127.99\n###Quantidade total de compras últimos 12 meses: 72\n###Frequência das compras (Quantidade):\n |   01/2024 |\n|----------:|\n|        72 |\n###Top 10 Principais itens comprados pelo cliente:\n |                                                                                  |   0 |\n|:---------------------------------------------------------------------------------|----:|\n| (\'4957\', \'SUPREMO CIMENTO CPIV 50KG\')                                            |  11 |\n| (\'1003390\', \'TEE PVC ESGOTO 100MM KRONA\')                                        |   7 |\n| (\'621\', \'TODAS OBRAS CIMENTO VOTORAN CP-IV 50KG\')                                |   7 |\n| (\'1006068\', \'NIVELADOR P/ PISO 3MM BRANCO (PCT C/ 100PCS)\')                      |   6 |\n| (\'1003316\', \'JOELHO PVC SOLDAVEL 90GR 25MM KRONA\')                               |   5 |\n| (\'949\', \'TIJOLO 8 FUROS 09X19X19 (A PECA) CERAMICA 90\')                          |   5 |\n| (\'1013090\', \'RETIRA - ARGAMASSA AC III 20KG (CINZA) VOTORANTIM\')                 |   4 |\n| (\'1012560\', \'IMPORTADO BARRA DE FERRO CA50 08,0MM 5/16 C/12MTS (4,740KG)\')       |   4 |\n| (\'1009211\', \'SILICONE ACETICO 250G INCOLOR\')                                     |   4 |\n| (\'1012101\', \'DISCO CORTE ACO/ INOX 4.1/2" X 3/64" X 7/8" (115 X 1,0 X 22,23MM)\') |   4 |\n###Principais departamentos comprados pelo cliente:\n | departamento   |   proportion |\n|:---------------|-------------:|\n| 3 - DEPTO PGN  |          100 |\n###Principais secaos comprados pelo cliente:\n | secao                |   proportion |\n|:---------------------|-------------:|\n| 3 - HIDRAULICA E GAS |     32.967   |\n| 18 - MATERIAL BASICO |     29.6703  |\n| 2 - PINTURA          |     12.0879  |\n| 9 - FERRAMENTAS      |     11.7216  |\n| 5 - ELETRICA         |      6.59341 |\n###Principais grupos comprados pelo cliente:\n | grupo                           |   proportion |\n|:--------------------------------|-------------:|\n| 68 - CONEXOES                   |     23.8095  |\n| 107 - ACESSORIOS DE FERRAMENTAS |      6.95971 |\n| 144 - VERGALHOES/ ARAMES        |      6.95971 |\n| 186 - CIMENTOS                  |      6.59341 |\n| 40 - IMPERMEABILIZANTES         |      6.22711 |\n###Principais subgrupos comprados pelo cliente:\n | subgrupo                 |   proportion |\n|:-------------------------|-------------:|\n| 303 - CONEXOES DE ESGOTO |     12.4542  |\n| 54 - CIMENTO             |      6.59341 |\n| 301 - CONEXOES SOLDAVEIS |      5.86081 |\n| 55 - ARGAMASSAS          |      5.49451 |\n| 56 - AREIA               |      4.3956  |\n###Maior compra últimos 12 meses:\n |              | 51                                                          |\n|:-------------|:------------------------------------------------------------|\n| estab        | 1000                                                        |\n| razaosoc     | TANAKO MATERIAIS PARA CONSTRUCAO LTDA                       |\n| emissao      | 2023-12-29 00:00:00                                         |\n| entradasaida | 2023-12-29 00:00:00                                         |\n| especie      | NF                                                          |\n| idnota       | 598411                                                      |\n| numdoc       | 598411                                                      |\n| serie        | PDV                                                         |\n| situacao     | Conferida                                                   |\n| motivodev    | SEM MOTIVO INFORMADO                                        |\n| pagamento    | Duplicata a Receber CARTEIRA Valor:              R$4.376,80 |\n| tipooper     | Venda                                                       |\n| total        | 4376.8                                                      |\n###Menor compra últimos 12 meses:\n |              | 54                                                          |\n|:-------------|:------------------------------------------------------------|\n| estab        | 1000                                                        |\n| razaosoc     | TANAKO MATERIAIS PARA CONSTRUCAO LTDA                       |\n| emissao      | 2024-01-02 00:00:00                                         |\n| entradasaida | 2024-01-02 00:00:00                                         |\n| especie      | NF                                                          |\n| idnota       | 598774                                                      |\n| numdoc       | 598774                                                      |\n| serie        | PDV                                                         |\n| situacao     | Conferida                                                   |\n| motivodev    | SEM MOTIVO INFORMADO                                        |\n| pagamento    | Duplicata a Receber CARTEIRA Valor:                   R$,89 |\n| tipooper     | Venda                                                       |\n| total        | 0.888                                                       |\n###Dia da semana que o cliente mais compra:\n Terça-feira\n###Últimas 10 compras:\n |    |   estab | razaosoc                              | emissao             | entradasaida        | especie   |   idnota |   numdoc | serie   | situacao   | motivodev            | pagamento                                                   | tipooper   |    total |\n|---:|--------:|:--------------------------------------|:--------------------|:--------------------|:----------|---------:|---------:|:--------|:-----------|:---------------------|:------------------------------------------------------------|:-----------|---------:|\n| 71 |    1000 | TANAKO MATERIAIS PARA CONSTRUCAO LTDA | 2024-01-25 00:00:00 | 2024-01-25 00:00:00 | NF        |   603234 |   603234 | PDV     | Conferida  | SEM MOTIVO INFORMADO | Duplicata a Receber CARTEIRA Valor:                 R$38,84 | Venda      |  38.8434 |\n| 70 |    1000 | TANAKO MATERIAIS PARA CONSTRUCAO LTDA | 2024-01-25 00:00:00 | 2024-01-25 00:00:00 | NF        |   603172 |   603172 | PDV     | Conferida  | SEM MOTIVO INFORMADO | Duplicata a Receber CARTEIRA Valor:                 R$16,38 | Venda      |  16.384  |\n| 69 |    1000 | TANAKO MATERIAIS PARA CONSTRUCAO LTDA | 2024-01-24 00:00:00 | 2024-01-24 00:00:00 | NF        |   602946 |   602946 | PDV     | Conferida  | SEM MOTIVO INFORMADO | Duplicata a Receber CARTEIRA Valor:                R$118,68 | Venda      | 118.68   |\n| 68 |    1000 | TANAKO MATERIAIS PARA CONSTRUCAO LTDA | 2024-01-22 00:00:00 | 2024-01-22 00:00:00 | NF        |   602618 |   602618 | PDV     | Conferida  | SEM MOTIVO INFORMADO | Duplicata a Receber CARTEIRA Valor:                 R$56,56 | Venda      |  56.552  |\n| 67 |    1000 | TANAKO MATERIAIS PARA CONSTRUCAO LTDA | 2024-01-19 00:00:00 | 2024-01-19 00:00:00 | NF        |   602267 |   602267 | PDV     | Conferida  | SEM MOTIVO INFORMADO | Duplicata a Receber CARTEIRA Valor:                 R$22,46 | Venda      |  22.456  |\n| 66 |    1000 | TANAKO MATERIAIS PARA CONSTRUCAO LTDA | 2024-01-18 00:00:00 | 2024-01-18 00:00:00 | NF        |   602041 |   602041 | PDV     | Conferida  | SEM MOTIVO INFORMADO | Duplicata a Receber CARTEIRA Valor:                 R$31,06 | Venda      |  31.056  |\n| 65 |    1000 | TANAKO MATERIAIS PARA CONSTRUCAO LTDA | 2024-01-16 00:00:00 | 2024-01-16 00:00:00 | NF        |   601423 |   601423 | PDV     | Conferida  | SEM MOTIVO INFORMADO | Duplicata a Receber CARTEIRA Valor:                R$282,32 | Venda      | 282.316  |\n| 64 |    1000 | TANAKO MATERIAIS PARA CONSTRUCAO LTDA | 2024-01-16 00:00:00 | 2024-01-16 00:00:00 | NF        |   601417 |   601417 | PDV     | Conferida  | SEM MOTIVO INFORMADO | Duplicata a Receber CARTEIRA Valor:                R$339,12 | Venda      | 339.12   |\n| 63 |    1000 | TANAKO MATERIAIS PARA CONSTRUCAO LTDA | 2024-01-15 00:00:00 | 2024-01-15 00:00:00 | NF        |   601193 |   601193 | PDV     | Conferida  | SEM MOTIVO INFORMADO | Duplicata a Receber CARTEIRA Valor:                 R$21,98 | Venda      |  21.984  |\n| 62 |    1000 | TANAKO MATERIAIS PARA CONSTRUCAO LTDA | 2024-01-11 00:00:00 | 2024-01-11 00:00:00 | NF        |   600615 |   600615 | PDV     | Conferida  | SEM MOTIVO INFORMADO | Duplicata a Receber CARTEIRA Valor:                 R$97,91 | Venda      |  97.912  |'}], 'model': 'llama3-8b-8192', 'max_tokens': 4000, 'n': 1, 'stop': None, 'stream': False, 'temperature': 0.7}}
-2025-01-24 08:28:52,566 - groq._base_client - DEBUG - Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
-2025-01-24 08:28:52,568 - httpcore.connection - DEBUG - connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=None socket_options=None
-2025-01-24 08:28:52,589 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F4682A6C30>
-2025-01-24 08:28:52,590 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001F46851ECD0> server_hostname='api.groq.com' timeout=None
-2025-01-24 08:28:52,795 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F4612DA420>
-2025-01-24 08:28:52,796 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
-2025-01-24 08:28:52,797 - httpcore.http11 - DEBUG - send_request_headers.complete
-2025-01-24 08:28:52,797 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
-2025-01-24 08:28:52,797 - httpcore.http11 - DEBUG - send_request_body.complete
-2025-01-24 08:28:52,798 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
-2025-01-24 08:28:55,669 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 24 Jan 2025 11:28:55 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'CF-Ray', b'906faeba0d1001ad-GRU'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'Vary', b'Origin, Accept-Encoding'), (b'Via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'x-groq-region', b'us-west-1'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'20000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'17849'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'6.453s'), (b'x-request-id', b'req_01jjc14w66enw8q0xb4fevw0z2'), (b'Set-Cookie', b'__cf_bm=1L_Pq.3Fjjdtzr7C20HXHhV4Kfrsrjx39sTqZwJP2KY-1737718135-1.0.1.1-FUSYv9fK8EP71cdxlfgcscYjihHbnOOB8Vk_SzJvyv37l3b5D3xKwnNR7OI3xCkFvyJhcP9_Os25Um4ELc3hzw; path=/; expires=Fri, 24-Jan-25 11:58:55 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'Content-Encoding', b'gzip')])
-2025-01-24 08:28:55,676 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
-2025-01-24 08:28:55,685 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
-2025-01-24 08:28:55,687 - httpcore.http11 - DEBUG - receive_response_body.complete
-2025-01-24 08:28:55,687 - httpcore.http11 - DEBUG - response_closed.started
-2025-01-24 08:28:55,688 - httpcore.http11 - DEBUG - response_closed.complete
-2025-01-24 08:28:55,688 - groq._base_client - DEBUG - HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Fri, 24 Jan 2025 11:28:55 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cf-ray': '906faeba0d1001ad-GRU', 'cf-cache-status': 'DYNAMIC', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin, Accept-Encoding', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'x-groq-region': 'us-west-1', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '20000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '17849', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '6.453s', 'x-request-id': 'req_01jjc14w66enw8q0xb4fevw0z2', 'set-cookie': '__cf_bm=1L_Pq.3Fjjdtzr7C20HXHhV4Kfrsrjx39sTqZwJP2KY-1737718135-1.0.1.1-FUSYv9fK8EP71cdxlfgcscYjihHbnOOB8Vk_SzJvyv37l3b5D3xKwnNR7OI3xCkFvyJhcP9_Os25Um4ELc3hzw; path=/; expires=Fri, 24-Jan-25 11:58:55 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'content-encoding': 'gzip'})
-2025-01-24 08:28:55,754 - root - DEBUG - Salva a mensagem da IA no banco de dados
-2025-01-24 08:28:55,898 - root - DEBUG - Requisição finalizada
-2025-01-24 08:29:05,223 - root - WARNING - Interrupção manual recebida. Encerrando serviço...
-2025-01-24 08:29:05,224 - root - DEBUG - Encerrando o serviço...
-2025-01-24 08:29:05,225 - root - DEBUG - Aguardando o término da thread do servidor...
-2025-01-24 08:29:10,228 - root - DEBUG - Encerrando o serviço...
-2025-01-24 08:29:10,229 - root - INFO - Serviço encerrado com sucesso.
-2025-01-24 08:29:11,044 - httpcore.connection - DEBUG - close.started
-2025-01-24 08:29:11,053 - httpcore.connection - DEBUG - close.complete
+2025-01-30 10:47:18,828 - root - WARNING - Interrupção manual recebida. Encerrando serviço...
+2025-01-30 10:47:18,829 - root - DEBUG - Encerrando o serviço...
+2025-01-30 10:47:18,830 - root - DEBUG - Aguardando o término da thread do servidor...
+2025-01-30 10:47:23,838 - root - ERROR - A thread do servidor não foi encerrada. Forçando o término do programa.
+2025-01-30 10:47:29,812 - root - DEBUG - Executando como serviço via NSSM.
+2025-01-30 10:47:29,813 - root - DEBUG - Serviço sendo inicializado
+2025-01-30 10:47:29,814 - root - DEBUG - Iniciando a criação do app
+2025-01-30 10:47:29,814 - root - DEBUG - Servidor iniciado em uma thread separada.
+2025-01-30 10:47:29,814 - root - DEBUG - Iniciando a instância do SQLAlchemy (Database)...
+2025-01-30 10:47:29,815 - root - DEBUG - Iniciando importação de TensorFlow e spaCy...
+2025-01-30 10:47:29,815 - root - DEBUG - Aguardando carregamento de recursos...
+2025-01-30 10:47:29,815 - root - DEBUG - Iniciando o banco de dados com a aplicação
+2025-01-30 10:47:29,886 - root - DEBUG - Verificando a conexão com o banco de dados...
+2025-01-30 10:47:30,353 - root - DEBUG - Conexão com o banco de dados verificada com sucesso: (1,)
+2025-01-30 10:47:30,356 - waitress - INFO - Serving on http://127.0.0.1:2710
+2025-01-30 10:47:31,466 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-01-30 10:47:33,359 - root - DEBUG - TensorFlow importado com sucesso.
+2025-01-30 10:47:34,399 - root - DEBUG - spaCy importado com sucesso.
+2025-01-30 10:47:34,400 - root - DEBUG - Todos os recursos pesados foram carregados.
+2025-01-30 10:47:39,106 - root - DEBUG - Inicio do processamento da equisição da mensagem
+2025-01-30 10:47:39,107 - root - DEBUG - Identifica a entidade principal da pergunta
+2025-01-30 10:47:39,107 - root - ERROR - Erro ao processar a requisição: 'NoneType' object is not callable
+2025-01-30 10:48:12,659 - root - WARNING - Interrupção manual recebida. Encerrando serviço...
+2025-01-30 10:48:12,659 - root - DEBUG - Encerrando o serviço...
+2025-01-30 10:48:12,660 - root - DEBUG - Aguardando o término da thread do servidor...
+2025-01-30 10:48:17,663 - root - DEBUG - Encerrando o serviço...
+2025-01-30 10:48:17,664 - root - INFO - Serviço encerrado com sucesso.
+2025-01-30 10:48:37,243 - root - DEBUG - Executando como serviço via NSSM.
+2025-01-30 10:48:37,244 - root - DEBUG - Serviço sendo inicializado
+2025-01-30 10:48:37,247 - root - DEBUG - Iniciando a criação do app
+2025-01-30 10:48:37,247 - root - DEBUG - Servidor iniciado em uma thread separada.
+2025-01-30 10:48:37,247 - root - DEBUG - Iniciando a instância do SQLAlchemy (Database)...
+2025-01-30 10:48:37,248 - root - DEBUG - Iniciando o banco de dados com a aplicação
+2025-01-30 10:48:37,248 - root - DEBUG - Iniciando importação de TensorFlow e spaCy...
+2025-01-30 10:48:37,248 - root - DEBUG - Aguardando carregamento de recursos...
+2025-01-30 10:48:37,462 - root - DEBUG - Verificando a conexão com o banco de dados...
+2025-01-30 10:48:37,912 - root - DEBUG - Conexão com o banco de dados verificada com sucesso: (1,)
+2025-01-30 10:48:37,922 - waitress - INFO - Serving on http://127.0.0.1:2710
+2025-01-30 10:48:39,785 - tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+2025-01-30 10:48:42,348 - root - DEBUG - Aguardando carregamento de recursos...
+2025-01-30 10:48:42,660 - root - DEBUG - TensorFlow importado com sucesso.
+2025-01-30 10:48:45,952 - root - DEBUG - spaCy importado com sucesso.
+2025-01-30 10:48:45,953 - root - DEBUG - Todos os recursos pesados foram carregados.
+2025-01-30 10:48:51,418 - root - DEBUG - Inicio do processamento da equisição da mensagem
+2025-01-30 10:48:51,419 - root - DEBUG - Identifica a entidade principal da pergunta
+2025-01-30 10:48:57,385 - root - ERROR - Erro ao processar a requisição: 'NoneType' object is not callable
+2025-01-30 10:51:29,450 - root - WARNING - Interrupção manual recebida. Encerrando serviço...
+2025-01-30 10:51:29,451 - root - DEBUG - Encerrando o serviço...
+2025-01-30 10:51:29,452 - root - DEBUG - Aguardando o término da thread do servidor...
+2025-01-30 10:51:34,458 - root - ERROR - A thread do servidor não foi encerrada. Forçando o término do programa.
+2025-01-30 10:53:19,381 - root - DEBUG - Executando como serviço via NSSM.
+2025-01-30 10:53:19,382 - root - DEBUG - Serviço sendo inicializado
+2025-01-30 10:53:19,385 - root - DEBUG - Iniciando a criação do app
+2025-01-30 10:53:19,385 - root - DEBUG - Servidor iniciado em uma thread separada.
+2025-01-30 10:53:19,386 - root - DEBUG - Iniciando a instância do SQLAlchemy (Database)...
+2025-01-30 10:53:19,386 - root - DEBUG - Iniciando o banco de dados com a aplicação
+2025-01-30 10:53:29,790 - root - DEBUG - Aguardando carregamento de recursos...
+2025-01-30 10:53:29,985 - root - DEBUG - Iniciando importação de TensorFlow e spaCy...
+2025-01-30 10:53:36,506 - root - DEBUG - Aguardando carregamento de recursos...
+2025-01-30 10:53:37,941 - root - ERROR - Erro ao carregar recursos pesados: The field annotations for DynamicRaggedShape are invalid. Field __pydevd_ret_val_dict is missing a type annotation.
+2025-01-30 10:53:39,810 - root - DEBUG - Verificando a conexão com o banco de dados...
+2025-01-30 10:53:41,703 - root - DEBUG - Aguardando carregamento de recursos...
+2025-01-30 10:53:42,236 - root - DEBUG - Conexão com o banco de dados verificada com sucesso: (1,)
+2025-01-30 10:53:46,931 - root - DEBUG - Aguardando carregamento de recursos...
+2025-01-30 10:53:48,693 - waitress - INFO - Serving on http://127.0.0.1:2710
+2025-01-30 10:53:51,933 - root - DEBUG - Aguardando carregamento de recursos...
+2025-01-30 10:53:56,934 - root - DEBUG - Aguardando carregamento de recursos...
+2025-01-30 10:54:01,936 - root - DEBUG - Aguardando carregamento de recursos...
+2025-01-30 10:54:06,938 - root - DEBUG - Aguardando carregamento de recursos...
+2025-01-30 10:54:11,941 - root - DEBUG - Aguardando carregamento de recursos...
+2025-01-30 10:54:16,942 - root - DEBUG - Aguardando carregamento de recursos...
+2025-01-30 10:54:21,944 - root - DEBUG - Aguardando carregamento de recursos...
+2025-01-30 10:54:26,946 - root - DEBUG - Aguardando carregamento de recursos...
+2025-01-30 11:02:20,411 - root - DEBUG - Executando como serviço via NSSM.
+2025-01-30 11:02:20,412 - root - DEBUG - Serviço sendo inicializado
+2025-01-30 11:02:20,412 - root - DEBUG - Iniciando a criação do app
+2025-01-30 11:02:20,412 - root - DEBUG - Servidor iniciado em uma thread separada.
+2025-01-30 11:02:20,413 - root - DEBUG - Iniciando a instância do SQLAlchemy (Database)...
+2025-01-30 11:02:20,413 - root - DEBUG - Iniciando o banco de dados com a aplicação
+2025-01-30 11:02:20,428 - root - DEBUG - Verificando a conexão com o banco de dados...
+2025-01-30 11:02:20,821 - root - DEBUG - Conexão com o banco de dados verificada com sucesso: (1,)
+2025-01-30 11:02:20,829 - waitress - INFO - Serving on http://127.0.0.1:2710
+2025-01-30 11:02:32,874 - root - DEBUG - Inicio do processamento da equisição da mensagem
+2025-01-30 11:02:32,875 - root - DEBUG - Identifica a entidade principal da pergunta
+2025-01-30 11:02:32,876 - root - ERROR - Erro ao processar a requisição: 'NoneType' object is not callable
+2025-01-30 11:03:16,558 - root - WARNING - Interrupção manual recebida. Encerrando serviço...
+2025-01-30 11:03:16,559 - root - DEBUG - Encerrando o serviço...
+2025-01-30 11:03:16,559 - root - DEBUG - Aguardando o término da thread do servidor...
+2025-01-30 11:03:21,568 - root - DEBUG - Encerrando o serviço...
+2025-01-30 11:03:21,569 - root - INFO - Serviço encerrado com sucesso.

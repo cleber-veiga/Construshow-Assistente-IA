@@ -2,7 +2,6 @@ import os
 import pickle
 import sys
 import joblib
-from tensorflow.keras.models import load_model
 from app.core.data.cleaner import TextCleaner
 from config import loger
 
@@ -55,6 +54,7 @@ def classifier(message, domain, config):
 
 
 def load_components(domain):
+    from tensorflow.keras.models import load_model
     try:
         # Validação do domínio
         if not domain or not isinstance(domain, str):
@@ -63,16 +63,16 @@ def load_components(domain):
 
         # Divide o domínio e converte para o formato esperado
         domain_split = domain.split('/')
-        if len(domain_split) < 3:
-            loger.log('ERROR', f"Formato de domínio inválido: {domain}")
-            return None, None, None
-
-        domain_convert = f'{domain_split[0]}_{domain_split[1]}_{domain_split[2]}'
+        domain_convert = ''
+        domain_path = ''
+        for idx, dom in enumerate(domain_split):
+            domain_convert += f'_{dom}' if idx != 0 else dom
+            domain_path += f'\\{dom}' if idx != 0 else dom
         loger.log('DEBUG', f"Domínio convertido: {domain_convert}")
 
         # Caminho base para os arquivos do modelo
         path_sys = _get_base_dir()
-        base_path = os.path.join(path_sys, domain_split[0], domain_split[1], domain_split[2])
+        base_path = os.path.join(path_sys, domain_path)
         loger.log('DEBUG', f"Caminho base: {base_path}")
 
         # Carrega o modelo
